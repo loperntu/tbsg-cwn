@@ -1,0 +1,11 @@
+sense_id,lemma,layer,gloss,source,status
+CWN_DEMO_XIN_01,心,modern_anchor,physical organ / heart,CWN anchor placeholder,DEMO_ONLY
+CWN_DEMO_XIN_02,心,modern_anchor,mind; cognitive/mental faculty,CWN anchor placeholder,DEMO_ONLY
+CWN_DEMO_XIN_03,心,modern_anchor,affective disposition / feelings,CWN anchor placeholder,DEMO_ONLY
+CWN_DEMO_YI_01,意,modern_anchor,intention / volition,CWN anchor placeholder,DEMO_ONLY
+CWN_DEMO_YI_02,意,modern_anchor,idea / meaning / mental content,CWN anchor placeholder,DEMO_ONLY
+CWN_DEMO_SHI_01,識,modern_anchor,cognition / discriminative awareness,CWN anchor placeholder,DEMO_ONLY
+BUD_XIN_B1,心,historical_buddhist,mental process / mental continuum,historical sense hypothesis,DEMO_ONLY
+BUD_YI_B1,意,historical_buddhist,mental faculty / intention,historical sense hypothesis,DEMO_ONLY
+BUD_SHI_B1,識,historical_buddhist,discriminative consciousness,historical sense hypothesis,DEMO_ONLY
+NEW_BUDDHIST_SENSE,*,novel_candidate,candidate sense not adequately covered by CWN,open-world sense slot,SYSTEM
