@@ -1,0 +1,5 @@
+instance_id,period,lemma,context,indic_term,assigned_sense_id,llm_confidence,cwn_compatibility,decision
+I001,Early (2–3C),心,其心清淨（DEMO CONTEXT）,citta,BUD_XIN_B1,0.82,0.77,existing_historical_sense
+I002,Middle (4–5C),意,攝意專精（DEMO CONTEXT）,manas,BUD_YI_B1,0.79,0.72,existing_historical_sense
+I003,Late (7C),識,識所緣境（DEMO CONTEXT）,vijñāna,BUD_SHI_B1,0.91,0.84,existing_historical_sense
+I004,Middle (4–5C),心,示例特殊術語語境（DEMO CONTEXT）,citta,NEW_BUDDHIST_SENSE,0.44,0.31,review_new_sense
