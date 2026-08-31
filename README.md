@@ -28,7 +28,7 @@ The MVP focuses on:
 
 - Chinese: `心 / 意 / 識`
 - Indic: `citta / manas / vijñāna`
-- Temporal comparison: early, middle, and later translation periods
+- temporal comparison across translation periods and traditions
 
 The main empirical question is:
 
@@ -44,45 +44,62 @@ Possible trajectories such as **compression → differentiation → stabilizatio
 - token-level evidence/provenance fields
 - conditional entropy `H(Chinese | Indic)` as a simple differentiation diagnostic
 - CBETA TEI/P5 importer scaffold
+- reproducible CWN sense/relationship exporter
+- CBETA API candidate collector
 
 ## Repository structure
 
 ```text
 src/
   app.py                  Gradio prototype
+  cwn_export.py           Native CWN sense/relation export
+  cbeta_search.py         CBETA API candidate collector
   cbeta_tei_importer.py   Minimal TEI/P5 extraction scaffold
 
-data/demo/
-  demo_edges.csv
-  demo_instances.csv
-  demo_senses.csv
-  demo_sense_links.csv
-  demo_temporal_metrics.csv
-
+data/demo/                Synthetic demo only
 schema/
   DATA_SCHEMA.csv
-
 docs/
   architecture.md
   annotation.md
+  data_provenance.md
 ```
+
+`data/raw/` and `data/derived/` are intentionally ignored until redistribution and version policies are checked.
 
 ## Important data warning
 
-All data currently under `data/demo/` are **synthetic demonstration data**. CWN IDs, glosses, alignments, counts, and historical-sense mappings are placeholders and must not be interpreted as historical findings.
+All data currently under `data/demo/` are **synthetic demonstration data**. CWN IDs, glosses, alignments, counts, and historical-sense mappings there are placeholders and must not be interpreted as historical findings.
 
-## Run
+## Run the demo
 
 ```bash
 pip install -r requirements.txt
 python src/app.py
 ```
 
+## Export real CWN anchors
+
+```bash
+pip install -r requirements-cwn.txt
+python src/cwn_export.py --lemmas 心 意 識
+```
+
+The exporter preserves native CWN sense IDs and writes version/provenance metadata. At repository setup time, CwnGraph's public manifest advertised version `v2022.08` / image `v.2022.08.01`; therefore exports must record the actual loaded image rather than loosely calling it "latest CWN".
+
+## Collect CBETA candidates
+
+```bash
+python src/cbeta_search.py --terms 心 意 識 --max-pages 1
+```
+
+At repository setup time, the CBETA developer documentation reported API `4.6.1` with corpus data `2026R2`. Search results are **candidate evidence only** and require passage-level verification before entering the research graph.
+
 ## Next research steps
 
-1. Import real CWN sense IDs, glosses, and semantic relations through CwnGraph.
-2. Extract 100–300 verified CBETA occurrences for `心 / 意 / 識` with stable provenance.
-3. Add Indic parallels where available and manually adjudicate alignment/sense labels.
+1. Run and inspect the real CWN export for `心 / 意 / 識`.
+2. Extract and manually verify the first 100–300 CBETA occurrences with stable provenance.
+3. Add Indic parallels where available and adjudicate alignment/sense labels.
 4. Evaluate graph rewiring across periods/translators without presupposing monotonic differentiation.
 5. Extend from lexical mapping to a richer **lexical sense genealogy** and eventually to a self-verifying multi-agent discovery layer.
 
