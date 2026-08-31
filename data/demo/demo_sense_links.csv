@@ -1,0 +1,5 @@
+historical_sense_id,cwn_sense_id,relation,confidence,note
+BUD_XIN_B1,CWN_DEMO_XIN_02,related_to,0.86,demo hypothesis
+BUD_YI_B1,CWN_DEMO_YI_01,related_to,0.78,demo hypothesis
+BUD_YI_B1,CWN_DEMO_YI_02,related_to,0.66,demo hypothesis
+BUD_SHI_B1,CWN_DEMO_SHI_01,related_to,0.89,demo hypothesis
