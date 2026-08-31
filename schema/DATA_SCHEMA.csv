@@ -1,0 +1,10 @@
+column,meaning,example
+period,Temporal bin label,Late (7C)
+date,Approx./normalized year,650
+translator,Translator or translation group,Xuanzang
+source_term,Indic lexical item,vijñāna
+target_term,Chinese lexical item,識
+count,Verified aligned occurrence count,65
+text_id,CBETA / parallel text ID,Txxxx
+evidence,Human-readable provenance,passage / line refs
+confidence,Alignment confidence 0–1,0.96
