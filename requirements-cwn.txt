@@ -1,0 +1,2 @@
+-r requirements.txt
+git+https://github.com/lopentu/CwnGraph.git@master#egg=CwnGraph
