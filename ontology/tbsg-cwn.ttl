@@ -1,0 +1,193 @@
+@prefix tbsg: <https://w3id.org/tbsg-cwn/ontology#> .
+@prefix ex:   <https://w3id.org/tbsg-cwn/resource/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/tbsg-cwn/ontology>
+    a owl:Ontology ;
+    rdfs:label "TBSG + CWN.dia ontology"@en ;
+    rdfs:label "TBSG + CWN.dia 本體"@zh ;
+    rdfs:comment "Minimal ontology for provenance-aware temporal semantic claims in Buddhist computational philology."@en .
+
+### Core scholarly objects
+
+tbsg:ScholarlyClaim a owl:Class ;
+    rdfs:label "Scholarly claim"@en ;
+    rdfs:comment "A revisable research assertion with evidence, provenance, uncertainty, counterevidence, and adjudication."@en .
+
+tbsg:TranslationClaim a owl:Class ;
+    rdfs:subClassOf tbsg:ScholarlyClaim ;
+    rdfs:label "Translation claim"@en .
+
+tbsg:SenseClaim a owl:Class ;
+    rdfs:subClassOf tbsg:ScholarlyClaim ;
+    rdfs:label "Sense claim"@en .
+
+tbsg:Attestation a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Textual attestation"@en .
+
+tbsg:CounterEvidence a owl:Class ;
+    rdfs:subClassOf tbsg:Attestation ;
+    rdfs:label "Counterevidence"@en .
+
+tbsg:Adjudication a owl:Class ;
+    rdfs:subClassOf prov:Activity ;
+    rdfs:label "Human adjudication"@en .
+
+### Textual / historical objects
+
+tbsg:Text a owl:Class ; rdfs:subClassOf prov:Entity .
+tbsg:Passage a owl:Class ; rdfs:subClassOf prov:Entity .
+tbsg:Translator a owl:Class ; rdfs:subClassOf prov:Agent .
+tbsg:TranslationTradition a owl:Class .
+tbsg:HistoricalPeriod a owl:Class .
+tbsg:Genre a owl:Class .
+tbsg:School a owl:Class .
+
+### Lexical-semantic objects
+
+tbsg:LexicalItem a owl:Class .
+tbsg:IndicLexicalItem a owl:Class ; rdfs:subClassOf tbsg:LexicalItem .
+tbsg:ChineseLexicalItem a owl:Class ; rdfs:subClassOf tbsg:LexicalItem .
+
+tbsg:LexicalSense a owl:Class .
+tbsg:HistoricalSense a owl:Class ; rdfs:subClassOf tbsg:LexicalSense .
+tbsg:BuddhistHistoricalSense a owl:Class ; rdfs:subClassOf tbsg:HistoricalSense .
+tbsg:ModernCWNSense a owl:Class ; rdfs:subClassOf tbsg:LexicalSense .
+tbsg:NewBuddhistSenseCandidate a owl:Class ; rdfs:subClassOf tbsg:BuddhistHistoricalSense .
+
+### Claim structure
+
+tbsg:subjectTerm a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range tbsg:LexicalItem .
+
+tbsg:objectTerm a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range tbsg:LexicalItem .
+
+tbsg:assertedRelation a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim .
+
+tbsg:translatedAs a owl:ObjectProperty ;
+    rdfs:domain tbsg:IndicLexicalItem ;
+    rdfs:range tbsg:ChineseLexicalItem .
+
+tbsg:instantiatesSense a owl:ObjectProperty ;
+    rdfs:domain tbsg:Attestation ;
+    rdfs:range tbsg:HistoricalSense .
+
+tbsg:supportedBy a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range tbsg:Attestation ;
+    rdfs:subPropertyOf prov:wasDerivedFrom .
+
+tbsg:contradictedBy a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range tbsg:CounterEvidence .
+
+tbsg:aboutText a owl:ObjectProperty ;
+    rdfs:domain tbsg:Attestation ;
+    rdfs:range tbsg:Text .
+
+tbsg:aboutPassage a owl:ObjectProperty ;
+    rdfs:domain tbsg:Attestation ;
+    rdfs:range tbsg:Passage .
+
+tbsg:translator a owl:ObjectProperty ;
+    rdfs:range tbsg:Translator .
+
+tbsg:translationTradition a owl:ObjectProperty ;
+    rdfs:range tbsg:TranslationTradition .
+
+tbsg:historicalPeriod a owl:ObjectProperty ;
+    rdfs:range tbsg:HistoricalPeriod .
+
+tbsg:genre a owl:ObjectProperty ; rdfs:range tbsg:Genre .
+tbsg:school a owl:ObjectProperty ; rdfs:range tbsg:School .
+
+### CWN.dia genealogical relations
+
+tbsg:equivalentTo a owl:ObjectProperty ;
+    rdfs:domain tbsg:HistoricalSense ;
+    rdfs:range tbsg:ModernCWNSense .
+
+tbsg:specializationOf a owl:ObjectProperty ;
+    rdfs:domain tbsg:HistoricalSense ;
+    rdfs:range tbsg:LexicalSense .
+
+tbsg:extensionOf a owl:ObjectProperty ;
+    rdfs:domain tbsg:HistoricalSense ;
+    rdfs:range tbsg:LexicalSense .
+
+tbsg:relatedToSense a owl:ObjectProperty ;
+    rdfs:domain tbsg:LexicalSense ;
+    rdfs:range tbsg:LexicalSense ;
+    rdfs:subPropertyOf skos:related .
+
+tbsg:predecessorSense a owl:ObjectProperty ;
+    rdfs:domain tbsg:LexicalSense ;
+    rdfs:range tbsg:LexicalSense .
+
+tbsg:successorSense a owl:ObjectProperty ;
+    owl:inverseOf tbsg:predecessorSense ;
+    rdfs:domain tbsg:LexicalSense ;
+    rdfs:range tbsg:LexicalSense .
+
+tbsg:noModernEquivalent a owl:DatatypeProperty ;
+    rdfs:domain tbsg:HistoricalSense ;
+    rdfs:range xsd:boolean .
+
+### Epistemic qualification
+
+tbsg:alignmentConfidence a owl:DatatypeProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range xsd:decimal .
+
+tbsg:senseConfidence a owl:DatatypeProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range xsd:decimal .
+
+tbsg:claimConfidence a owl:DatatypeProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range xsd:decimal .
+
+tbsg:verificationStatus a owl:DatatypeProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range xsd:string .
+
+tbsg:adjudicationStatus a owl:DatatypeProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range xsd:string .
+
+tbsg:adjudicatedBy a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range prov:Agent .
+
+tbsg:adjudicationActivity a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range tbsg:Adjudication .
+
+tbsg:revisesClaim a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range tbsg:ScholarlyClaim .
+
+tbsg:supersedesClaim a owl:ObjectProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range tbsg:ScholarlyClaim .
+
+### Temporal and bibliographic literals
+
+tbsg:normalizedYear a owl:DatatypeProperty ; rdfs:range xsd:integer .
+tbsg:startYear a owl:DatatypeProperty ; rdfs:range xsd:integer .
+tbsg:endYear a owl:DatatypeProperty ; rdfs:range xsd:integer .
+tbsg:textId a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:passageId a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:surfaceForm a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:gloss a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:cwnSenseId a owl:DatatypeProperty ; rdfs:domain tbsg:ModernCWNSense ; rdfs:range xsd:string .
