@@ -2,25 +2,52 @@
 
 **Temporal Buddhist Semantic Graph with a diachronic Chinese WordNet layer**
 
-This repository explores how Buddhist translation terminology reorganizes across time, translators, and textual traditions, and how those historical senses can be linked to — but not forced into — modern Chinese WordNet (CWN) sense inventories.
+This repository develops a provenance-aware, uncertainty-aware framework for studying how Buddhist lexical-semantic systems reorganize across time, translators, and textual traditions. The project combines three distinct layers:
+
+1. **TrustGraph** as the semantic/provenance substrate and future agent-context layer;
+2. **TBSG** as the temporal-semantic representation and analysis method;
+3. **CWN.dia** as the diachronic sense ontology linking Buddhist historical senses to modern Chinese WordNet (CWN) anchors.
+
+The design principle is simple:
+
+> **TrustGraph stores and traces claims; TBSG defines temporal semantic change; CWN.dia models lexical sense genealogy.**
 
 ## Research idea
 
-The project models three linked semantic layers:
-
 ```text
-Indic lexical concept
-        ↓ translated_as
-Chinese Buddhist lexical form
-        ↓ instantiates
-Buddhist historical sense
-        ↓ diachronic_relation
-Modern CWN sense anchor
+CBETA / Indic witnesses / CWN
+             │
+             ▼
+     Evidence + Claim Objects
+             │
+             ▼
+   TrustGraph Context Hypergraph
+  (RDF/OWL, provenance, named graphs)
+             │
+             ▼
+      TBSG analytical layer
+  (time, translator, graph rewiring)
+             │
+             ▼
+          CWN.dia
+ (historical sense genealogy)
+             │
+             ▼
+       Modern CWN anchors
 ```
 
-The central object is not merely a word-to-word correspondence such as `citta → 心`, but a provenance-bearing historical claim: a lexical alignment attested in a dated text, associated with a translator/tradition, linked to a historical sense, and optionally related to a modern CWN sense.
+The central object is not merely a word-to-word edge such as `citta → 心`, but an **epistemically qualified claim**:
 
-A key design principle is **open-world sense induction**. CWN serves as a semantic backbone and modern anchor, not as a closed label set for historical data. Buddhist usages that do not fit existing senses are routed to `NEW_BUDDHIST_SENSE` for human adjudication.
+```text
+Claim = Statement
+      + Evidence
+      + Provenance
+      + Uncertainty
+      + Counterevidence
+      + Human status
+```
+
+A translation claim may therefore connect an Indic lexeme, Chinese lexical form, text, passage, translator, date, historical sense, confidence scores, supporting passages, and counterexamples as one addressable scholarly object.
 
 ## Initial case study
 
@@ -29,12 +56,27 @@ The MVP focuses on:
 - Chinese: `心 / 意 / 識`
 - Indic: `citta / manas / vijñāna`
 - temporal comparison across translation periods and traditions
+- mapping Buddhist historical senses to CWN without forcing historical data into a modern closed sense inventory
 
-The main empirical question is:
+Primary empirical question:
 
-> Does the lexical-semantic organization of Buddhist concepts exhibit measurable graph rewiring across translation periods and translation traditions?
+> **Does the lexical-semantic organization of Buddhist concepts exhibit measurable graph rewiring across translation periods and translation traditions?**
 
 Possible trajectories such as **compression → differentiation → stabilization** are hypotheses to be tested, not assumptions built into the model.
+
+## Why TrustGraph?
+
+TrustGraph is used as infrastructure rather than as the research theory. Its RDF/OWL context-graph model, statement-level provenance, named graphs, ontology support, GraphRAG, and agent orchestration are well matched to philological evidence that is naturally n-ary and provenance-sensitive.
+
+However, a structured graph does not make an extracted claim true. TBSG therefore preserves separate epistemic fields for:
+
+- source verification
+- lexical alignment confidence
+- historical-sense confidence
+- CWN diachronic-relation confidence
+- supporting evidence
+- counterevidence
+- human adjudication status
 
 ## Prototype features
 
@@ -46,6 +88,7 @@ Possible trajectories such as **compression → differentiation → stabilizatio
 - CBETA TEI/P5 importer scaffold
 - reproducible CWN sense/relationship exporter
 - CBETA API candidate collector
+- TrustGraph-compatible claim/evidence model (design stage)
 
 ## Repository structure
 
@@ -63,6 +106,7 @@ docs/
   architecture.md
   annotation.md
   data_provenance.md
+  proposal_bilingual.md
 ```
 
 `data/raw/` and `data/derived/` are intentionally ignored until redistribution and version policies are checked.
@@ -85,7 +129,7 @@ pip install -r requirements-cwn.txt
 python src/cwn_export.py --lemmas 心 意 識
 ```
 
-The exporter preserves native CWN sense IDs and writes version/provenance metadata. At repository setup time, CwnGraph's public manifest advertised version `v2022.08` / image `v.2022.08.01`; therefore exports must record the actual loaded image rather than loosely calling it "latest CWN".
+The exporter preserves native CWN sense IDs and writes version/provenance metadata. Exports must record the actual loaded CWN image/version rather than loosely calling it "latest CWN".
 
 ## Collect CBETA candidates
 
@@ -93,15 +137,16 @@ The exporter preserves native CWN sense IDs and writes version/provenance metada
 python src/cbeta_search.py --terms 心 意 識 --max-pages 1
 ```
 
-At repository setup time, the CBETA developer documentation reported API `4.6.1` with corpus data `2026R2`. Search results are **candidate evidence only** and require passage-level verification before entering the research graph.
+Search results are **candidate evidence only** and require passage-level verification before entering the research graph.
 
-## Next research steps
+## Near-term roadmap
 
 1. Run and inspect the real CWN export for `心 / 意 / 識`.
 2. Extract and manually verify the first 100–300 CBETA occurrences with stable provenance.
-3. Add Indic parallels where available and adjudicate alignment/sense labels.
-4. Evaluate graph rewiring across periods/translators without presupposing monotonic differentiation.
-5. Extend from lexical mapping to a richer **lexical sense genealogy** and eventually to a self-verifying multi-agent discovery layer.
+3. Define the TBSG/CWN.dia ontology in RDF/OWL and map it to TrustGraph named/provenance graphs.
+4. Add Indic parallels where available and adjudicate alignment/sense labels.
+5. Evaluate graph rewiring across periods/translators without presupposing monotonic differentiation.
+6. Add a future DharmaSwarm layer for `retrieve → hypothesize → seek counterevidence → verify → graph → human adjudication`.
 
 ## Status
 
