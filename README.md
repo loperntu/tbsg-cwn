@@ -8,8 +8,6 @@ This repository develops a provenance-aware, uncertainty-aware framework for stu
 2. **TBSG** as the temporal-semantic representation and analysis method;
 3. **CWN.dia** as the diachronic sense ontology linking Buddhist historical senses to modern Chinese WordNet (CWN) anchors.
 
-The design principle is simple:
-
 > **TrustGraph stores and traces claims; TBSG defines temporal semantic change; CWN.dia models lexical sense genealogy.**
 
 ## Research idea
@@ -36,7 +34,7 @@ CBETA / Indic witnesses / CWN
        Modern CWN anchors
 ```
 
-The central object is not merely a word-to-word edge such as `citta → 心`, but an **epistemically qualified claim**:
+The central object is an **epistemically qualified claim**:
 
 ```text
 Claim = Statement
@@ -44,14 +42,12 @@ Claim = Statement
       + Provenance
       + Uncertainty
       + Counterevidence
-      + Human status
+      + Human adjudication
 ```
 
-A translation claim may therefore connect an Indic lexeme, Chinese lexical form, text, passage, translator, date, historical sense, confidence scores, supporting passages, and counterexamples as one addressable scholarly object.
+A translation claim can therefore connect an Indic lexeme, Chinese lexical form, text, passage, translator, date, historical sense, confidence scores, supporting passages, and counterexamples as one addressable scholarly object.
 
 ## Initial case study
-
-The MVP focuses on:
 
 - Chinese: `心 / 意 / 識`
 - Indic: `citta / manas / vijñāna`
@@ -66,17 +62,35 @@ Possible trajectories such as **compression → differentiation → stabilizatio
 
 ## Why TrustGraph?
 
-TrustGraph is used as infrastructure rather than as the research theory. Its RDF/OWL context-graph model, statement-level provenance, named graphs, ontology support, GraphRAG, and agent orchestration are well matched to philological evidence that is naturally n-ary and provenance-sensitive.
+TrustGraph is used as infrastructure rather than as the research theory. Its RDF/OWL context-graph model, provenance, named graphs, ontology support, GraphRAG, and agent orchestration are well matched to philological evidence that is naturally n-ary and provenance-sensitive.
 
-However, a structured graph does not make an extracted claim true. TBSG therefore preserves separate epistemic fields for:
+A structured graph does not make an extracted claim true. TBSG therefore preserves separate epistemic fields for source verification, lexical alignment confidence, historical-sense confidence, CWN diachronic-relation confidence, supporting evidence, counterevidence, and human adjudication status.
 
-- source verification
-- lexical alignment confidence
-- historical-sense confidence
-- CWN diachronic-relation confidence
-- supporting evidence
-- counterevidence
-- human adjudication status
+## Formal ontology and claim example
+
+The repository now contains an executable semantic specification rather than only a conceptual diagram:
+
+```text
+ontology/
+  tbsg-cwn.ttl             OWL/RDF ontology
+examples/
+  claim_example.nq         N-Quads scholarly-claim example
+docs/
+  claim_schema.md          epistemic and named-graph conventions
+```
+
+The N-Quads example separates six epistemic zones:
+
+- `urn:graph:claims`
+- `urn:graph:provenance`
+- `urn:graph:context`
+- `urn:graph:lexicon`
+- `urn:graph:senses`
+- `urn:graph:adjudication`
+
+This separation is deliberate: **what a source attests and what a researcher infers must remain distinguishable**.
+
+All identifiers and historical values in the current example are synthetic placeholders.
 
 ## Prototype features
 
@@ -88,7 +102,8 @@ However, a structured graph does not make an extracted claim true. TBSG therefor
 - CBETA TEI/P5 importer scaffold
 - reproducible CWN sense/relationship exporter
 - CBETA API candidate collector
-- TrustGraph-compatible claim/evidence model (design stage)
+- RDF/OWL TBSG + CWN.dia ontology
+- TrustGraph-compatible N-Quads claim/evidence model
 
 ## Repository structure
 
@@ -98,14 +113,19 @@ src/
   cwn_export.py           Native CWN sense/relation export
   cbeta_search.py         CBETA API candidate collector
   cbeta_tei_importer.py   Minimal TEI/P5 extraction scaffold
-
+ontology/
+  tbsg-cwn.ttl
 data/demo/                Synthetic demo only
+examples/
+  claim_example.nq
 schema/
   DATA_SCHEMA.csv
 docs/
   architecture.md
   annotation.md
   data_provenance.md
+  trustgraph_integration.md
+  claim_schema.md
   proposal_bilingual.md
 ```
 
@@ -113,7 +133,7 @@ docs/
 
 ## Important data warning
 
-All data currently under `data/demo/` are **synthetic demonstration data**. CWN IDs, glosses, alignments, counts, and historical-sense mappings there are placeholders and must not be interpreted as historical findings.
+All data currently under `data/demo/` and values in `examples/claim_example.nq` are **synthetic demonstration data**. CWN IDs, alignments, counts, passages, confidence values, and historical-sense mappings must not be interpreted as historical findings.
 
 ## Run the demo
 
@@ -129,7 +149,7 @@ pip install -r requirements-cwn.txt
 python src/cwn_export.py --lemmas 心 意 識
 ```
 
-The exporter preserves native CWN sense IDs and writes version/provenance metadata. Exports must record the actual loaded CWN image/version rather than loosely calling it "latest CWN".
+The exporter preserves native CWN sense IDs and writes version/provenance metadata.
 
 ## Collect CBETA candidates
 
@@ -143,10 +163,15 @@ Search results are **candidate evidence only** and require passage-level verific
 
 1. Run and inspect the real CWN export for `心 / 意 / 識`.
 2. Extract and manually verify the first 100–300 CBETA occurrences with stable provenance.
-3. Define the TBSG/CWN.dia ontology in RDF/OWL and map it to TrustGraph named/provenance graphs.
-4. Add Indic parallels where available and adjudicate alignment/sense labels.
-5. Evaluate graph rewiring across periods/translators without presupposing monotonic differentiation.
-6. Add a future DharmaSwarm layer for `retrieve → hypothesize → seek counterevidence → verify → graph → human adjudication`.
+3. Convert the first verified occurrence into the RDF/N-Quads claim schema.
+4. Validate `ontology/tbsg-cwn.ttl` with an RDF/OWL toolchain and prepare TrustGraph ingestion.
+5. Add Indic parallels where available and adjudicate alignment/sense labels.
+6. Evaluate graph rewiring across periods/translators without presupposing monotonic differentiation.
+7. Add a future DharmaSwarm layer for `retrieve → hypothesize → seek counterevidence → verify → graph → human adjudication`.
+
+## Proposal
+
+A full bilingual research proposal is available at [`docs/proposal_bilingual.md`](docs/proposal_bilingual.md).
 
 ## Status
 
