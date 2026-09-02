@@ -1,0 +1,49 @@
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#TranslationClaim> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#subjectTerm> <https://w3id.org/tbsg-cwn/resource/lexeme/vijnana> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#objectTerm> <https://w3id.org/tbsg-cwn/resource/lexeme/shi> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#assertedRelation> <https://w3id.org/tbsg-cwn/ontology#translatedAs> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#alignmentConfidence> "0.91"^^<http://www.w3.org/2001/XMLSchema#decimal> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#senseConfidence> "0.82"^^<http://www.w3.org/2001/XMLSchema#decimal> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#claimConfidence> "0.86"^^<http://www.w3.org/2001/XMLSchema#decimal> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#verificationStatus> "verified-demo" <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#historicalPeriod> <https://w3id.org/tbsg-cwn/resource/period/7C> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#translator> <https://w3id.org/tbsg-cwn/resource/translator/Xuanzang> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#supportedBy> <https://w3id.org/tbsg-cwn/resource/evidence/E001> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#contradictedBy> <https://w3id.org/tbsg-cwn/resource/evidence/E019> <urn:graph:claims> .
+
+<https://w3id.org/tbsg-cwn/resource/lexeme/vijnana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#IndicLexicalItem> <urn:graph:lexicon> .
+<https://w3id.org/tbsg-cwn/resource/lexeme/vijnana> <https://w3id.org/tbsg-cwn/ontology#surfaceForm> "vijñāna" <urn:graph:lexicon> .
+<https://w3id.org/tbsg-cwn/resource/lexeme/shi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#ChineseLexicalItem> <urn:graph:lexicon> .
+<https://w3id.org/tbsg-cwn/resource/lexeme/shi> <https://w3id.org/tbsg-cwn/ontology#surfaceForm> "識" <urn:graph:lexicon> .
+
+<https://w3id.org/tbsg-cwn/resource/evidence/E001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Attestation> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/evidence/E001> <https://w3id.org/tbsg-cwn/ontology#aboutText> <https://w3id.org/tbsg-cwn/resource/text/TXXXX> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/evidence/E001> <https://w3id.org/tbsg-cwn/ontology#aboutPassage> <https://w3id.org/tbsg-cwn/resource/passage/TXXXX-p123> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/evidence/E001> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://cbetaonline.dila.edu.tw/> <urn:graph:provenance> .
+
+<https://w3id.org/tbsg-cwn/resource/evidence/E019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#CounterEvidence> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/evidence/E019> <https://w3id.org/tbsg-cwn/ontology#aboutText> <https://w3id.org/tbsg-cwn/resource/text/TYYYY> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/evidence/E019> <https://w3id.org/tbsg-cwn/ontology#aboutPassage> <https://w3id.org/tbsg-cwn/resource/passage/TYYYY-p456> <urn:graph:provenance> .
+
+<https://w3id.org/tbsg-cwn/resource/text/TXXXX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Text> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/text/TXXXX> <https://w3id.org/tbsg-cwn/ontology#textId> "TXXXX" <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/passage/TXXXX-p123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Passage> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/passage/TXXXX-p123> <https://w3id.org/tbsg-cwn/ontology#passageId> "p123" <urn:graph:provenance> .
+
+<https://w3id.org/tbsg-cwn/resource/translator/Xuanzang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Translator> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/translator/Xuanzang> <http://www.w3.org/2000/01/rdf-schema#label> "玄奘"@zh <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/period/7C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#HistoricalPeriod> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/period/7C> <https://w3id.org/tbsg-cwn/ontology#startYear> "600"^^<http://www.w3.org/2001/XMLSchema#integer> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/period/7C> <https://w3id.org/tbsg-cwn/ontology#endYear> "699"^^<http://www.w3.org/2001/XMLSchema#integer> <urn:graph:context> .
+
+<https://w3id.org/tbsg-cwn/resource/sense/BUD_SHI_B1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#BuddhistHistoricalSense> <urn:graph:senses> .
+<https://w3id.org/tbsg-cwn/resource/sense/BUD_SHI_B1> <https://w3id.org/tbsg-cwn/ontology#gloss> "discriminative consciousness (demo historical sense)" <urn:graph:senses> .
+<https://w3id.org/tbsg-cwn/resource/evidence/E001> <https://w3id.org/tbsg-cwn/ontology#instantiatesSense> <https://w3id.org/tbsg-cwn/resource/sense/BUD_SHI_B1> <urn:graph:senses> .
+
+<https://w3id.org/tbsg-cwn/resource/sense/CWN_DEMO_SHI_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#ModernCWNSense> <urn:graph:senses> .
+<https://w3id.org/tbsg-cwn/resource/sense/CWN_DEMO_SHI_01> <https://w3id.org/tbsg-cwn/ontology#cwnSenseId> "REPLACE_WITH_NATIVE_CWN_ID" <urn:graph:senses> .
+<https://w3id.org/tbsg-cwn/resource/sense/BUD_SHI_B1> <https://w3id.org/tbsg-cwn/ontology#relatedToSense> <https://w3id.org/tbsg-cwn/resource/sense/CWN_DEMO_SHI_01> <urn:graph:senses> .
+
+<https://w3id.org/tbsg-cwn/resource/adjudication/A001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Adjudication> <urn:graph:adjudication> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#adjudicationActivity> <https://w3id.org/tbsg-cwn/resource/adjudication/A001> <urn:graph:adjudication> .
+<https://w3id.org/tbsg-cwn/resource/claim/C001> <https://w3id.org/tbsg-cwn/ontology#adjudicationStatus> "accepted-for-demo" <urn:graph:adjudication> .
