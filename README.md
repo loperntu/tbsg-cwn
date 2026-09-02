@@ -45,7 +45,7 @@ Claim = Statement
       + Human adjudication
 ```
 
-A translation claim can therefore connect an Indic lexeme, Chinese lexical form, text, passage, translator, date, historical sense, confidence scores, supporting passages, and counterexamples as one addressable scholarly object.
+A philological claim can therefore connect an Indic lexeme, Chinese lexical form, text, passage, translator attribution, date, historical sense, confidence scores, supporting passages, counterexamples, and review state as one addressable scholarly object.
 
 ## Initial case study
 
@@ -66,20 +66,24 @@ TrustGraph is used as infrastructure rather than as the research theory. Its RDF
 
 A structured graph does not make an extracted claim true. TBSG therefore preserves separate epistemic fields for source verification, lexical alignment confidence, historical-sense confidence, CWN diachronic-relation confidence, supporting evidence, counterevidence, and human adjudication status.
 
-## Formal ontology and claim example
+## Formal ontology and claim examples
 
-The repository now contains an executable semantic specification rather than only a conceptual diagram:
+The repository contains an executable semantic specification:
 
 ```text
 ontology/
-  tbsg-cwn.ttl             OWL/RDF ontology
+  tbsg-cwn.ttl                 core OWL/RDF ontology
+  philology-extension.ttl      conservative parallel-correspondence vocabulary
 examples/
-  claim_example.nq         N-Quads scholarly-claim example
+  claim_example.nq             synthetic N-Quads example
+  claim_real_t0251_vijnana_shi.nq
+                               first real-source vertical slice
 docs/
-  claim_schema.md          epistemic and named-graph conventions
+  claim_schema.md              epistemic and named-graph conventions
+  first_real_claim.md          source notes and methodological caveats
 ```
 
-The N-Quads example separates six epistemic zones:
+The N-Quads model separates six epistemic zones:
 
 - `urn:graph:claims`
 - `urn:graph:provenance`
@@ -90,7 +94,20 @@ The N-Quads example separates six epistemic zones:
 
 This separation is deliberate: **what a source attests and what a researcher infers must remain distinguishable**.
 
-All identifiers and historical values in the current example are synthetic placeholders.
+### First real-source vertical slice
+
+The first non-synthetic source example uses CBETA T0251, `T0251.001.0848c08-09`, where `識` occurs in the skandha sequence corresponding to Sanskrit `vijñāna` in a parallel Heart Sutra passage.
+
+It is encoded as a `ParallelCorrespondenceClaim`, not a direct `TranslationClaim`. This means the graph asserts secure lexical correspondence in parallel passages without claiming that the specific extant Sanskrit witness was the direct source of the Chinese text.
+
+Current status of this first real-source claim:
+
+- Chinese source: verified
+- Sanskrit parallel source: verified
+- lexical correspondence: high-confidence candidate
+- CWN native sense mapping: pending
+- counterevidence search: pending
+- human adjudication: pending
 
 ## Prototype features
 
@@ -104,6 +121,7 @@ All identifiers and historical values in the current example are synthetic place
 - CBETA API candidate collector
 - RDF/OWL TBSG + CWN.dia ontology
 - TrustGraph-compatible N-Quads claim/evidence model
+- conservative distinction between `ParallelCorrespondenceClaim` and direct translation/source-dependence claims
 
 ## Repository structure
 
@@ -115,9 +133,11 @@ src/
   cbeta_tei_importer.py   Minimal TEI/P5 extraction scaffold
 ontology/
   tbsg-cwn.ttl
+  philology-extension.ttl
 data/demo/                Synthetic demo only
 examples/
   claim_example.nq
+  claim_real_t0251_vijnana_shi.nq
 schema/
   DATA_SCHEMA.csv
 docs/
@@ -126,14 +146,17 @@ docs/
   data_provenance.md
   trustgraph_integration.md
   claim_schema.md
+  first_real_claim.md
   proposal_bilingual.md
 ```
 
 `data/raw/` and `data/derived/` are intentionally ignored until redistribution and version policies are checked.
 
-## Important data warning
+## Data status warning
 
-All data currently under `data/demo/` and values in `examples/claim_example.nq` are **synthetic demonstration data**. CWN IDs, alignments, counts, passages, confidence values, and historical-sense mappings must not be interpreted as historical findings.
+All files under `data/demo/` and `examples/claim_example.nq` are synthetic demonstration material.
+
+`examples/claim_real_t0251_vijnana_shi.nq` uses real source passages but is **not yet a gold/adjudicated claim**: its CWN mapping, counterevidence search, and human review remain pending.
 
 ## Run the demo
 
@@ -162,10 +185,10 @@ Search results are **candidate evidence only** and require passage-level verific
 ## Near-term roadmap
 
 1. Run and inspect the real CWN export for `心 / 意 / 識`.
-2. Extract and manually verify the first 100–300 CBETA occurrences with stable provenance.
-3. Convert the first verified occurrence into the RDF/N-Quads claim schema.
-4. Validate `ontology/tbsg-cwn.ttl` with an RDF/OWL toolchain and prepare TrustGraph ingestion.
-5. Add Indic parallels where available and adjudicate alignment/sense labels.
+2. Human-review the T0251 `vijñāna ↔ 識` vertical slice and attach a native CWN mapping where justified.
+3. Search for counterexamples and alternative lexicalizations in independent witnesses.
+4. Extract and manually verify the first 100–300 CBETA occurrences with stable provenance.
+5. Validate RDF/N-Quads with a parser and test TrustGraph ingestion.
 6. Evaluate graph rewiring across periods/translators without presupposing monotonic differentiation.
 7. Add a future DharmaSwarm layer for `retrieve → hypothesize → seek counterevidence → verify → graph → human adjudication`.
 
