@@ -1,0 +1,44 @@
+@prefix tbsg: <https://w3id.org/tbsg-cwn/ontology#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Philological extension for cases where textual parallelism is secure
+# but direct translation direction/source dependence is not established.
+
+tbsg:ParallelCorrespondenceClaim a owl:Class ;
+    rdfs:subClassOf tbsg:ScholarlyClaim ;
+    rdfs:label "Parallel lexical correspondence claim"@en ;
+    rdfs:label "平行文本詞彙對應主張"@zh ;
+    rdfs:comment "A claim that lexical items correspond in aligned or parallel passages without asserting direct translation direction or source dependence."@en .
+
+tbsg:parallelCorrespondsTo a owl:ObjectProperty ;
+    rdfs:domain tbsg:LexicalItem ;
+    rdfs:range tbsg:LexicalItem ;
+    rdfs:label "parallel corresponds to"@en ;
+    rdfs:label "平行對應於"@zh .
+
+tbsg:attributedTranslator a owl:ObjectProperty ;
+    rdfs:range tbsg:Translator ;
+    rdfs:label "attributed translator"@en ;
+    rdfs:comment "Traditional or catalogued translator attribution; does not by itself assert direct dependence on a particular extant source witness."@en .
+
+tbsg:attributionStatus a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+tbsg:sourceURI a owl:DatatypeProperty ;
+    rdfs:range xsd:anyURI .
+
+tbsg:sourceEditionLabel a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+tbsg:cwnMappingStatus a owl:DatatypeProperty ;
+    rdfs:domain tbsg:HistoricalSense ;
+    rdfs:range xsd:string .
+
+tbsg:counterevidenceSearchStatus a owl:DatatypeProperty ;
+    rdfs:domain tbsg:ScholarlyClaim ;
+    rdfs:range xsd:string .
+
+tbsg:reviewStatus a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
