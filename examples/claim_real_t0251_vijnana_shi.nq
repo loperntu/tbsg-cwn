@@ -1,0 +1,55 @@
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#ParallelCorrespondenceClaim> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#subjectTerm> <https://w3id.org/tbsg-cwn/resource/lexeme/sa/vijnana> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#objectTerm> <https://w3id.org/tbsg-cwn/resource/lexeme/zh/shi> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#assertedRelation> <https://w3id.org/tbsg-cwn/ontology#parallelCorrespondsTo> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#supportedBy> <https://w3id.org/tbsg-cwn/resource/attestation/T0251-0848c08-zh> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#supportedBy> <https://w3id.org/tbsg-cwn/resource/attestation/hrdaya-sa-vijnana> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#alignmentConfidence> "0.98"^^<http://www.w3.org/2001/XMLSchema#decimal> <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#verificationStatus> "source-verified; parallel-source-verified; CWN-mapping-pending" <urn:graph:claims> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#counterevidenceSearchStatus> "not-yet-performed" <urn:graph:claims> .
+
+<https://w3id.org/tbsg-cwn/resource/lexeme/sa/vijnana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#IndicLexicalItem> <urn:graph:lexicon> .
+<https://w3id.org/tbsg-cwn/resource/lexeme/sa/vijnana> <https://w3id.org/tbsg-cwn/ontology#surfaceForm> "vijñāna" <urn:graph:lexicon> .
+<https://w3id.org/tbsg-cwn/resource/lexeme/zh/shi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#ChineseLexicalItem> <urn:graph:lexicon> .
+<https://w3id.org/tbsg-cwn/resource/lexeme/zh/shi> <https://w3id.org/tbsg-cwn/ontology#surfaceForm> "識"@zh <urn:graph:lexicon> .
+
+<https://w3id.org/tbsg-cwn/resource/text/T0251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Text> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/T0251> <https://w3id.org/tbsg-cwn/ontology#textId> "T0251" <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/T0251> <https://w3id.org/tbsg-cwn/ontology#sourceEditionLabel> "CBETA / Taishō Tripiṭaka T08 no. 251" <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/T0251> <https://w3id.org/tbsg-cwn/ontology#sourceURI> "https://cbetaonline.dila.edu.tw/zh/T08n0251_001"^^<http://www.w3.org/2001/XMLSchema#anyURI> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/T0251> <https://w3id.org/tbsg-cwn/ontology#attributedTranslator> <https://w3id.org/tbsg-cwn/resource/person/xuanzang> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/T0251> <https://w3id.org/tbsg-cwn/ontology#attributionStatus> "catalogued/traditional attribution; direct dependence on the extant Sanskrit witness is not asserted" <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/T0251> <https://w3id.org/tbsg-cwn/ontology#normalizedYear> "649"^^<http://www.w3.org/2001/XMLSchema#integer> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/person/xuanzang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Translator> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/person/xuanzang> <http://www.w3.org/2000/01/rdf-schema#label> "玄奘"@zh <urn:graph:context> .
+
+<https://w3id.org/tbsg-cwn/resource/passage/T0251-0848c08-09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Passage> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/passage/T0251-0848c08-09> <https://w3id.org/tbsg-cwn/ontology#passageId> "T0251.001.0848c08-09" <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/passage/T0251-0848c08-09> <https://w3id.org/tbsg-cwn/ontology#surfaceForm> "受、想、行、識，亦復如是。"@zh <urn:graph:context> .
+
+<https://w3id.org/tbsg-cwn/resource/attestation/T0251-0848c08-zh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Attestation> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/attestation/T0251-0848c08-zh> <https://w3id.org/tbsg-cwn/ontology#aboutText> <https://w3id.org/tbsg-cwn/resource/text/T0251> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/attestation/T0251-0848c08-zh> <https://w3id.org/tbsg-cwn/ontology#aboutPassage> <https://w3id.org/tbsg-cwn/resource/passage/T0251-0848c08-09> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/attestation/T0251-0848c08-zh> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://cbetaonline.dila.edu.tw/zh/T08n0251_001> <urn:graph:provenance> .
+
+<https://w3id.org/tbsg-cwn/resource/text/hrdaya-sanskrit-ntu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Text> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/hrdaya-sanskrit-ntu> <https://w3id.org/tbsg-cwn/ontology#sourceEditionLabel> "Prajñāpāramitā-hṛdaya-sūtra Sanskrit transcription, NTU Buddhist Digital Library" <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/text/hrdaya-sanskrit-ntu> <https://w3id.org/tbsg-cwn/ontology#sourceURI> "https://buddhism.lib.ntu.edu.tw/FULLTEXT/mukherjee/articles/html/sk-heart.htm"^^<http://www.w3.org/2001/XMLSchema#anyURI> <urn:graph:context> .
+
+<https://w3id.org/tbsg-cwn/resource/passage/hrdaya-sa-vijnana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Passage> <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/passage/hrdaya-sa-vijnana> <https://w3id.org/tbsg-cwn/ontology#passageId> "hrdaya:evam-eva-vedana-samjna-samskara-vijnanani" <urn:graph:context> .
+<https://w3id.org/tbsg-cwn/resource/passage/hrdaya-sa-vijnana> <https://w3id.org/tbsg-cwn/ontology#surfaceForm> "evam eva vedanā-saṃjñā-saṃskāra-vijñānāni" <urn:graph:context> .
+
+<https://w3id.org/tbsg-cwn/resource/attestation/hrdaya-sa-vijnana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Attestation> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/attestation/hrdaya-sa-vijnana> <https://w3id.org/tbsg-cwn/ontology#aboutText> <https://w3id.org/tbsg-cwn/resource/text/hrdaya-sanskrit-ntu> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/attestation/hrdaya-sa-vijnana> <https://w3id.org/tbsg-cwn/ontology#aboutPassage> <https://w3id.org/tbsg-cwn/resource/passage/hrdaya-sa-vijnana> <urn:graph:provenance> .
+<https://w3id.org/tbsg-cwn/resource/attestation/hrdaya-sa-vijnana> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://buddhism.lib.ntu.edu.tw/FULLTEXT/mukherjee/articles/html/sk-heart.htm> <urn:graph:provenance> .
+
+<https://w3id.org/tbsg-cwn/resource/sense/buddhist-shi-skandha-consciousness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#BuddhistHistoricalSense> <urn:graph:senses> .
+<https://w3id.org/tbsg-cwn/resource/sense/buddhist-shi-skandha-consciousness> <https://w3id.org/tbsg-cwn/ontology#gloss> "識 as the consciousness member of the five skandhas; provisional historical-sense label pending CWN mapping"@en <urn:graph:senses> .
+<https://w3id.org/tbsg-cwn/resource/sense/buddhist-shi-skandha-consciousness> <https://w3id.org/tbsg-cwn/ontology#cwnMappingStatus> "pending-native-CWN-export" <urn:graph:senses> .
+<https://w3id.org/tbsg-cwn/resource/attestation/T0251-0848c08-zh> <https://w3id.org/tbsg-cwn/ontology#instantiatesSense> <https://w3id.org/tbsg-cwn/resource/sense/buddhist-shi-skandha-consciousness> <urn:graph:senses> .
+
+<https://w3id.org/tbsg-cwn/resource/adjudication/T0251-0848c08-vijnana-shi-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tbsg-cwn/ontology#Adjudication> <urn:graph:adjudication> .
+<https://w3id.org/tbsg-cwn/resource/adjudication/T0251-0848c08-vijnana-shi-v1> <https://w3id.org/tbsg-cwn/ontology#reviewStatus> "machine-prepared; human-review-pending" <urn:graph:adjudication> .
+<https://w3id.org/tbsg-cwn/resource/claim/T0251-0848c08-vijnana-shi> <https://w3id.org/tbsg-cwn/ontology#adjudicationActivity> <https://w3id.org/tbsg-cwn/resource/adjudication/T0251-0848c08-vijnana-shi-v1> <urn:graph:adjudication> .
