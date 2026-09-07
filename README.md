@@ -4,9 +4,9 @@
 
 ## PNC 2026 evidence prototype
 
-[Planned research website](https://lopentu.github.io/sindia-site/buddhist/) · [Full bilingual proposal](docs/ciwn_proposal_bilingual.md) · [Release and reproduction notes](docs/pnc_release.md) · [PNC talk guide](docs/pnc_talk_bilingual.md)
+[Open the bilingual research website](https://lopentu.github.io/sindia-site/buddhist/) · [Full bilingual proposal](docs/ciwn_proposal_bilingual.md) · [Release and reproduction notes](docs/pnc_release.md) · [PNC talk guide](docs/pnc_talk_bilingual.md)
 
-The website is prepared; publication to `lopentu/sindia-site` is pending integration write access (HTTP 403). [A reviewable deployment patch is included](docs/deployment/README.md).
+The bilingual website is published on GitHub Pages. [Deployment details](docs/deployment/README.md).
 
 The current release provides **16 machine-prepared claims, 6 evidence windows, and 27 native CWN senses**. Deterministic source checks and controlled rejection/retry are implemented. All semantic interpretations and sense mappings await expert review; no live LLM swarm, validated temporal effect, or TrustGraph integration is claimed.
 

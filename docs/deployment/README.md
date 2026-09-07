@@ -2,7 +2,9 @@
 
 Target: https://lopentu.github.io/sindia-site/buddhist/
 
-Status on 2026-09-07: static site, bilingual project pages and navigation changes are ready. The GitHub integration returned `403 Resource not accessible by integration` when creating the site tree. No site commit or deployment was made. Research repository writes are separate.
+Published after repository access was granted. Site commit: `1ebc658c59346af1682790cdc6d7af282bee86bb`. Successful deployment: https://github.com/lopentu/sindia-site/actions/runs/34088350008
+
+The patch below is an archive of the prepared version; do not reapply it to the live site.
 
 ## Review and apply
 
@@ -28,4 +30,4 @@ After reviewing the result, commit the changes and push main. The repository’s
 - 16 candidate claims, 6 evidence windows, 27 native CWN senses, original source headers and source terms.
 - Full bilingual proposal, PNC talk guide and reproducibility notes.
 
-HCC was not changed. Local JavaScript syntax and relative-resource links were checked. The Next.js production build and hosted behavior still require validation in the authorized deployment environment.
+HCC was not changed. Local JavaScript syntax and relative-resource links were checked. The Next.js production build and Pages deployment succeeded; public project pages and data were checked after release.

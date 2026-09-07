@@ -1,6 +1,6 @@
 # PNC 2026 release: CiWN evidence prototype
 
-The prepared demonstration targets [SinDia Buddhist Semantics](https://lopentu.github.io/sindia-site/buddhist/). Publication is pending repository write access; the connected integration returned HTTP 403 for `lopentu/sindia-site`. See [deployment instructions](deployment/README.md).
+The demonstration is published at [SinDia Buddhist Semantics](https://lopentu.github.io/sindia-site/buddhist/). See [deployment details](deployment/README.md).
 
 ## Scope and measured outputs
 

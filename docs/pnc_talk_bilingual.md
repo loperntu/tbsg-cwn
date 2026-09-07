@@ -8,8 +8,6 @@
 
 **網站：** [SinDia Buddhist Semantics](https://lopentu.github.io/sindia-site/buddhist/)
 
-**發布狀態。** 正式網站目前待 GitHub repo 寫入權限；會前可先使用 `CiWN_Offline_Demo.html`，其中書證檢視與檢查流程均可離線運作。
-
 ## 會前兩天的優先順序
 
 今天：核對姓名、題目與實際發表長度；請領域學者先檢視 C001 與《俱舍論》conset 判斷。未審核前保持 pending，無須為上台而改成已驗證。
