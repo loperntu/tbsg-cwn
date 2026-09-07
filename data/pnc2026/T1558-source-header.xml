@@ -1,0 +1,365 @@
+<ns0:teiHeader xmlns:ns0="http://www.tei-c.org/ns/1.0" xmlns:ns1="http://www.cbeta.org/ns/1.0">
+  <ns0:fileDesc>
+    <ns0:titleStmt>
+      <ns0:title level="s">Taishō Tripiṭaka</ns0:title>
+      <ns0:title level="s" xml:lang="zh-Hant">大正新脩大藏經</ns0:title>
+      <ns0:title level="m" xml:lang="zh-Hant">阿毘達磨俱舍論</ns0:title>
+      <ns0:title>Taishō Tripiṭaka, Electronic version, No. 1558 阿毘達磨俱舍論</ns0:title>
+      <ns0:title xml:lang="zh-Hant">大正新脩大藏經數位版, No. 1558 阿毘達磨俱舍論</ns0:title>
+      <ns0:author>尊者世親造　唐 玄奘譯</ns0:author>
+      <ns0:respStmt>
+        <ns0:resp>Electronic Version by</ns0:resp>
+        <ns0:name>CBETA</ns0:name>
+      </ns0:respStmt>
+    </ns0:titleStmt>
+    <ns0:editionStmt>
+      <ns0:edition>XML TEI P5</ns0:edition>
+      <ns0:respStmt xml:id="resp1"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp2"><ns0:resp>corrections</ns0:resp><ns0:name>Taisho</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp3"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA.maha</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp4"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA.ting</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp5"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA.sy</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp6"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA.poyung</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp7"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA.pan</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp8"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA.liyi</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp9"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA.shin</ns0:name></ns0:respStmt>
+    </ns0:editionStmt>
+    <ns0:extent>30卷</ns0:extent>
+    <ns0:publicationStmt>
+      <ns0:idno type="CBETA">
+        <ns0:idno type="canon">T</ns0:idno>.<ns0:idno type="vol">29</ns0:idno>.<ns0:idno type="no">1558</ns0:idno>
+      </ns0:idno>
+      <ns0:distributor>
+        <ns0:name>財團法人佛教電子佛典基金會 (CBETA)</ns0:name>
+        <ns0:address>
+          <ns0:addrLine><ns0:email>service@cbeta.org</ns0:email></ns0:addrLine>
+        </ns0:address>
+      </ns0:distributor>
+      <ns0:availability>
+        <ns0:p>Available for non-commercial use when distributed with this header intact.</ns0:p>
+      </ns0:availability>
+      <ns0:date>2026-06-15 07:11:47 +0800</ns0:date>
+    </ns0:publicationStmt>
+    <ns0:sourceDesc>
+      <ns0:bibl>大正新脩大藏經</ns0:bibl>
+    </ns0:sourceDesc>
+  </ns0:fileDesc>
+  <ns0:encodingDesc>
+    <ns0:projectDesc>
+      <ns0:p xml:lang="en" ns1:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by SAT, Japan, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Li Ming-Fang</ns0:p>
+      <ns0:p xml:lang="zh-Hant" ns1:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，日本 SAT 組織提供，北美某大德提供，李明芳大德提供新式標點</ns0:p>
+    </ns0:projectDesc>
+    <ns0:editorialDecl>
+      <ns0:punctuation resp="#resp1"><ns0:p>新式標點</ns0:p></ns0:punctuation>
+    </ns0:editorialDecl>
+    <ns0:tagsDecl>
+      <ns0:namespace name="http://www.tei-c.org/ns/1.0">
+        <ns0:tagUsage gi="rdg">
+          <ns0:listWit>
+            <ns0:witness xml:id="wit.cbeta">【CB】</ns0:witness>
+            <ns0:witness xml:id="wit.orig">【大】</ns0:witness>
+            <ns0:witness xml:id="wit1">【明】</ns0:witness>
+            <ns0:witness xml:id="wit10">【磧乙-CB】</ns0:witness>
+            <ns0:witness xml:id="wit11">【思溪乙-CB】</ns0:witness>
+            <ns0:witness xml:id="wit12">【金藏乙-CB】</ns0:witness>
+            <ns0:witness xml:id="wit2">【宋】</ns0:witness>
+            <ns0:witness xml:id="wit3">【元】</ns0:witness>
+            <ns0:witness xml:id="wit4">【宮】</ns0:witness>
+            <ns0:witness xml:id="wit5">【磧-CB】</ns0:witness>
+            <ns0:witness xml:id="wit6">【麗-CB】</ns0:witness>
+            <ns0:witness xml:id="wit7">【石】</ns0:witness>
+            <ns0:witness xml:id="wit8">【宮-CB】</ns0:witness>
+            <ns0:witness xml:id="wit9">【流布本】</ns0:witness>
+          </ns0:listWit>
+        </ns0:tagUsage>
+      </ns0:namespace>
+    </ns0:tagsDecl>
+    <ns0:charDecl>
+      <ns0:char xml:id="CB00045">
+        <ns0:charName>CBETA CHARACTER CB00045</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[口*(一/巾)]</ns0:value>
+        </ns0:charProp>
+        <ns0:charProp>
+          <ns0:localName>normalized form</ns0:localName>
+          <ns0:value>咂</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+20BD7</ns0:mapping>
+        <ns0:mapping ns1:dec="983085" type="PUA">U+F002D</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00178">
+        <ns0:charName>CBETA CHARACTER CB00178</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[木*奈]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+3B88</ns0:mapping>
+        <ns0:mapping ns1:dec="983218" type="PUA">U+F00B2</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00190">
+        <ns0:charName>CBETA CHARACTER CB00190</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[木*柰]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+3B8F</ns0:mapping>
+        <ns0:mapping ns1:dec="983230" type="PUA">U+F00BE</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00232">
+        <ns0:charName>CBETA CHARACTER CB00232</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[古*頁]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+29476</ns0:mapping>
+        <ns0:mapping ns1:dec="983272" type="PUA">U+F00E8</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00395">
+        <ns0:charName>CBETA CHARACTER CB00395</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[怡-台+龍]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+22931</ns0:mapping>
+        <ns0:mapping ns1:dec="983435" type="PUA">U+F018B</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00468">
+        <ns0:charName>CBETA CHARACTER CB00468</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[革*卬]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+4A55</ns0:mapping>
+        <ns0:mapping ns1:dec="983508" type="PUA">U+F01D4</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00501">
+        <ns0:charName>CBETA CHARACTER CB00501</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[馬*犬]</ns0:value>
+        </ns0:charProp>
+        <ns0:charProp>
+          <ns0:localName>normalized form</ns0:localName>
+          <ns0:value>馱</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+4B7E</ns0:mapping>
+        <ns0:mapping ns1:dec="983541" type="PUA">U+F01F5</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00574">
+        <ns0:charName>CBETA CHARACTER CB00574</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[夢-夕+登]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+2713C</ns0:mapping>
+        <ns0:mapping ns1:dec="983614" type="PUA">U+F023E</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00592">
+        <ns0:charName>CBETA CHARACTER CB00592</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[穀-禾+卵]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+3C89</ns0:mapping>
+        <ns0:mapping ns1:dec="983632" type="PUA">U+F0250</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00595">
+        <ns0:charName>CBETA CHARACTER CB00595</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[麩-夫+少]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="normal_unicode">U+9EA8</ns0:mapping>
+        <ns0:mapping ns1:dec="983635" type="PUA">U+F0253</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00626">
+        <ns0:charName>CBETA CHARACTER CB00626</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[疊*毛]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+3CB2</ns0:mapping>
+        <ns0:mapping ns1:dec="983666" type="PUA">U+F0272</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00654">
+        <ns0:charName>CBETA CHARACTER CB00654</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[夌*欠]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+238CB</ns0:mapping>
+        <ns0:mapping ns1:dec="983694" type="PUA">U+F028E</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00703">
+        <ns0:charName>CBETA CHARACTER CB00703</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[火*曹]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+3DEE</ns0:mapping>
+        <ns0:mapping ns1:dec="983743" type="PUA">U+F02BF</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00733">
+        <ns0:charName>CBETA CHARACTER CB00733</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[褒-保+可]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+27643</ns0:mapping>
+        <ns0:mapping ns1:dec="983773" type="PUA">U+F02DD</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB00931">
+        <ns0:charName>CBETA CHARACTER CB00931</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[麩-夫+廣]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="normal_unicode">U+2A37F</ns0:mapping>
+        <ns0:mapping ns1:dec="983971" type="PUA">U+F03A3</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB01040">
+        <ns0:charName>CBETA CHARACTER CB01040</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[此/束]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+2DABF</ns0:mapping>
+        <ns0:mapping ns1:dec="984080" type="PUA">U+F0410</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB01115">
+        <ns0:charName>CBETA CHARACTER CB01115</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[壴*桑]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+23799</ns0:mapping>
+        <ns0:mapping ns1:dec="984155" type="PUA">U+F045B</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB02205">
+        <ns0:charName>CBETA CHARACTER CB02205</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[齒*(虎-儿+且)]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+4DA5</ns0:mapping>
+        <ns0:mapping ns1:dec="985245" type="PUA">U+F089D</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB02232">
+        <ns0:charName>CBETA CHARACTER CB02232</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[韋*沓]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+293BD</ns0:mapping>
+        <ns0:mapping ns1:dec="985272" type="PUA">U+F08B8</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB02233">
+        <ns0:charName>CBETA CHARACTER CB02233</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[捐-口+左]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+3A0A</ns0:mapping>
+        <ns0:mapping ns1:dec="985273" type="PUA">U+F08B9</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB02758">
+        <ns0:charName>CBETA CHARACTER CB02758</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[月*且]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+43E3</ns0:mapping>
+        <ns0:mapping ns1:dec="985798" type="PUA">U+F0AC6</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB04921">
+        <ns0:charName>CBETA CHARACTER CB04921</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[按-女+(尸@貝)]</ns0:value>
+        </ns0:charProp>
+        <ns0:charProp>
+          <ns0:localName>normalized form</ns0:localName>
+          <ns0:value>擯</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping ns1:dec="987961" type="PUA">U+F1339</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB05718">
+        <ns0:charName>CBETA CHARACTER CB05718</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[仁-二+(敲-高)]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+201B8</ns0:mapping>
+        <ns0:mapping ns1:dec="988758" type="PUA">U+F1656</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB13582">
+        <ns0:charName>CBETA CHARACTER CB13582</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[牛*包]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+2DDDD</ns0:mapping>
+        <ns0:mapping ns1:dec="996622" type="PUA">U+F350E</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB13585">
+        <ns0:charName>CBETA CHARACTER CB13585</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[佧-上+┴]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping ns1:dec="996625" type="PUA">U+F3511</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB21113">
+        <ns0:charName>CBETA CHARACTER CB21113</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[泳-永+(瓜-、)]</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+23C96</ns0:mapping>
+        <ns0:mapping ns1:dec="1004153" type="PUA">U+F5279</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB29765">
+        <ns0:charName>CBETA CHARACTER CB29765</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[社-土+皮]</ns0:value>
+        </ns0:charProp>
+        <ns0:charProp>
+          <ns0:localName>normalized form</ns0:localName>
+          <ns0:value>被</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+2C4B3</ns0:mapping>
+        <ns0:mapping ns1:dec="1012805" type="PUA">U+F7445</ns0:mapping>
+      </ns0:char>
+      <ns0:char xml:id="CB33048">
+        <ns0:charName>CBETA CHARACTER CB33048</ns0:charName>
+        <ns0:charProp>
+          <ns0:localName>composition</ns0:localName>
+          <ns0:value>[梡-元+(眉-目+貝)]</ns0:value>
+        </ns0:charProp>
+        <ns0:charProp>
+          <ns0:localName>normalized form</ns0:localName>
+          <ns0:value>檳</ns0:value>
+        </ns0:charProp>
+        <ns0:mapping type="unicode">U+3BFD</ns0:mapping>
+        <ns0:mapping ns1:dec="1016088" type="PUA">U+F8118</ns0:mapping>
+      </ns0:char>
+    </ns0:charDecl>
+  </ns0:encodingDesc>
+  <ns0:profileDesc>
+    <ns0:langUsage>
+      <ns0:language ident="sa">Sanskrit</ns0:language>
+      <ns0:language ident="en">English</ns0:language>
+      <ns0:language ident="zh-Hant">Chinese (Traditional)</ns0:language>
+    </ns0:langUsage>
+  </ns0:profileDesc>
+  <ns0:revisionDesc>
+    <ns0:change when="2013-05-20">
+      <ns0:name>CW</ns0:name><ns0:name>Ray Chou 周邦信</ns0:name>P4 to P5 conversion by p4top5a.py, intended for publication
+    </ns0:change>
+    <ns0:change when="1999-06-28T20:31:40">
+      CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)
+    </ns0:change>
+  </ns0:revisionDesc>
+</ns0:teiHeader>

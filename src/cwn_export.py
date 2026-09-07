@@ -10,6 +10,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
+import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -63,7 +65,11 @@ def export_cwn(lemmas, out_dir: Path, image_tag: str | None = None):
             "pip install git+https://github.com/lopentu/CwnGraph.git"
         ) from exc
 
-    cwn = CwnImage(image_tag) if image_tag else CwnImage.latest()
+    from CwnGraph.download import get_manifest, ensure_image
+    manifest = get_manifest()
+    resolved_tag = image_tag or manifest["images"][0]["tag"]
+    image_path = Path(ensure_image(resolved_tag))
+    cwn = CwnImage.load(resolved_tag)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     senses_out = []
@@ -71,7 +77,7 @@ def export_cwn(lemmas, out_dir: Path, image_tag: str | None = None):
 
     for query in lemmas:
         # find_lemma accepts regex; anchors ensure exact lemma matching.
-        candidates = cwn.find_lemma(f"^{query}$")
+        candidates = cwn.find_lemma(f"^{re.escape(query)}$")
         for lemma in candidates:
             lemma_name = getattr(lemma, "lemma", query)
             for sense in getattr(lemma, "senses", []) or []:
@@ -96,6 +102,11 @@ def export_cwn(lemmas, out_dir: Path, image_tag: str | None = None):
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "lemmas": list(lemmas),
         "requested_image_tag": image_tag,
+        "resolved_image_tag": resolved_tag,
+        "manifest_version": manifest.get("version"),
+        "image_sha256": hashlib.sha256(image_path.read_bytes()).hexdigest(),
+        "image_metadata": cwn.meta,
+        "manifest": manifest,
         "loader": "CwnGraph.CwnImage",
         "note": (
             "CwnGraph's public manifest should be checked and recorded with each export. "
@@ -104,7 +115,7 @@ def export_cwn(lemmas, out_dir: Path, image_tag: str | None = None):
         ),
     }
     (out_dir / "cwn_export_metadata.json").write_text(
-        json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(meta, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
     )
     print(f"Exported {len(senses)} senses and {len(relations)} relations to {out_dir}")
 

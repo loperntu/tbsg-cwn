@@ -1,0 +1,77 @@
+<ns0:teiHeader xmlns:ns0="http://www.tei-c.org/ns/1.0" xmlns:ns1="http://www.cbeta.org/ns/1.0">
+  <ns0:fileDesc>
+    <ns0:titleStmt>
+      <ns0:title level="s">Taishō Tripiṭaka</ns0:title>
+      <ns0:title level="s" xml:lang="zh-Hant">大正新脩大藏經</ns0:title>
+      <ns0:title level="m" xml:lang="zh-Hant">大乘百法明門論</ns0:title>
+      <ns0:title>Taishō Tripiṭaka, Electronic version, No. 1614 大乘百法明門論</ns0:title>
+      <ns0:title xml:lang="zh-Hant">大正新脩大藏經數位版, No. 1614 大乘百法明門論</ns0:title>
+      <ns0:author>天親菩薩造　唐 玄奘譯</ns0:author>
+      <ns0:respStmt>
+        <ns0:resp>Electronic Version by</ns0:resp>
+        <ns0:name>CBETA</ns0:name>
+      </ns0:respStmt>
+    </ns0:titleStmt>
+    <ns0:editionStmt>
+      <ns0:edition>XML TEI P5</ns0:edition>
+      <ns0:respStmt xml:id="resp1"><ns0:resp>corrections</ns0:resp><ns0:name>CBETA</ns0:name></ns0:respStmt>
+      <ns0:respStmt xml:id="resp2"><ns0:resp>corrections</ns0:resp><ns0:name>Taisho</ns0:name></ns0:respStmt>
+    </ns0:editionStmt>
+    <ns0:extent>1卷</ns0:extent>
+    <ns0:publicationStmt>
+      <ns0:idno type="CBETA">
+        <ns0:idno type="canon">T</ns0:idno>.<ns0:idno type="vol">31</ns0:idno>.<ns0:idno type="no">1614</ns0:idno>
+      </ns0:idno>
+      <ns0:distributor>
+        <ns0:name>財團法人佛教電子佛典基金會 (CBETA)</ns0:name>
+        <ns0:address>
+          <ns0:addrLine><ns0:email>service@cbeta.org</ns0:email></ns0:addrLine>
+        </ns0:address>
+      </ns0:distributor>
+      <ns0:availability>
+        <ns0:p>Available for non-commercial use when distributed with this header intact.</ns0:p>
+      </ns0:availability>
+      <ns0:date>2026-06-15 07:11:47 +0800</ns0:date>
+    </ns0:publicationStmt>
+    <ns0:sourceDesc>
+      <ns0:bibl>大正新脩大藏經</ns0:bibl>
+    </ns0:sourceDesc>
+  </ns0:fileDesc>
+  <ns0:encodingDesc>
+    <ns0:projectDesc>
+      <ns0:p xml:lang="en" ns1:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Li Ming-Fang</ns0:p>
+      <ns0:p xml:lang="zh-Hant" ns1:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，李明芳大德提供新式標點</ns0:p>
+    </ns0:projectDesc>
+    <ns0:editorialDecl>
+      <ns0:punctuation resp="#resp1"><ns0:p>新式標點</ns0:p></ns0:punctuation>
+    </ns0:editorialDecl>
+    <ns0:tagsDecl>
+      <ns0:namespace name="http://www.tei-c.org/ns/1.0">
+        <ns0:tagUsage gi="rdg">
+          <ns0:listWit>
+            <ns0:witness xml:id="wit.cbeta">【CB】</ns0:witness>
+            <ns0:witness xml:id="wit.orig">【大】</ns0:witness>
+            <ns0:witness xml:id="wit1">【宋】</ns0:witness>
+            <ns0:witness xml:id="wit2">【元】</ns0:witness>
+            <ns0:witness xml:id="wit3">【明】</ns0:witness>
+            <ns0:witness xml:id="wit4">【宮】</ns0:witness>
+          </ns0:listWit>
+        </ns0:tagUsage>
+      </ns0:namespace>
+    </ns0:tagsDecl>
+  </ns0:encodingDesc>
+  <ns0:profileDesc>
+    <ns0:langUsage>
+      <ns0:language ident="en">English</ns0:language>
+      <ns0:language ident="zh-Hant">Chinese (Traditional)</ns0:language>
+    </ns0:langUsage>
+  </ns0:profileDesc>
+  <ns0:revisionDesc>
+    <ns0:change when="2013-05-20">
+      <ns0:name>CW</ns0:name><ns0:name>Ray Chou 周邦信</ns0:name>P4 to P5 conversion by p4top5a.py, intended for publication
+    </ns0:change>
+    <ns0:change when="1999-06-28T20:51:27">
+      CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)
+    </ns0:change>
+  </ns0:revisionDesc>
+</ns0:teiHeader>

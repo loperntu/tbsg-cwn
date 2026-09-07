@@ -1,0 +1,2302 @@
+{
+  "release": "PNC-2026-09-07",
+  "schema_version": "0.2",
+  "description": "Small, source-checkable demonstration. All semantic claims await expert adjudication. No temporal effect or model benchmark has been measured.",
+  "sources": {
+    "T0251": {
+      "id": "T0251",
+      "title_zh": "般若波羅蜜多心經",
+      "title_en": "Prajñāpāramitāhṛdaya",
+      "url": "https://cbetaonline.dila.edu.tw/zh/T08n0251",
+      "raw_url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T08/T08n0251.xml",
+      "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
+      "sha256": "f5507df86309f861ef2b92e9ba9db985c6db0ad357553599c6e921e15deca761",
+      "source_header_file": "T0251-source-header.xml",
+      "edition": "CBETA XML TEI P5; Taishō main reading",
+      "retrieved": "2026-09-07",
+      "publication_date": "2025-07-27 15:48:43 +0800",
+      "rights": "CBETA: non-commercial use with source header intact; included header accompanies these excerpts."
+    },
+    "T1558": {
+      "id": "T1558",
+      "title_zh": "阿毘達磨俱舍論",
+      "title_en": "Abhidharmakośabhāṣya",
+      "url": "https://cbetaonline.dila.edu.tw/zh/T29n1558",
+      "raw_url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T29/T29n1558.xml",
+      "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
+      "sha256": "c38aec4b48a24702dbc6217b2604288d63007d65a48a08cea538397458894fca",
+      "source_header_file": "T1558-source-header.xml",
+      "edition": "CBETA XML TEI P5; Taishō main reading",
+      "retrieved": "2026-09-07",
+      "publication_date": "2026-06-15 07:11:47 +0800",
+      "rights": "CBETA: non-commercial use with source header intact; included header accompanies these excerpts."
+    },
+    "T1614": {
+      "id": "T1614",
+      "title_zh": "大乘百法明門論",
+      "title_en": "Treatise on the Hundred Dharmas",
+      "url": "https://cbetaonline.dila.edu.tw/zh/T31n1614",
+      "raw_url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T31/T31n1614.xml",
+      "source_revision": "dbdea41071e1e260ad84b72faefd4587333cf76d",
+      "sha256": "71792c2b98c7de70fdbf809d4ea7206c77d277154078cc3bf81764721b370f62",
+      "source_header_file": "T1614-source-header.xml",
+      "edition": "CBETA XML TEI P5; Taishō main reading",
+      "retrieved": "2026-09-07",
+      "publication_date": "2026-06-15 07:11:47 +0800",
+      "rights": "CBETA: non-commercial use with source header intact; included header accompanies these excerpts."
+    },
+    "SA-HEART": {
+      "id": "SA-HEART",
+      "title_zh": "臺大佛學數位圖書館：梵文《心經》轉寫",
+      "title_en": "NTU Buddhist Digital Library: Sanskrit Heart Sūtra transcription",
+      "url": "https://buddhism.lib.ntu.edu.tw/FULLTEXT/mukherjee/articles/html/sk-heart.htm",
+      "sha256": "00ea2f1021daecbaba2852cbfbad0f95b1ead9abdde986508420659cd10d9796",
+      "retrieved": "2026-09-07",
+      "rights": "Brief scholarly excerpts; original transcription retains source terms.",
+      "source_revision": null,
+      "decoding": "cp950: legacy bytes conflict with declared UTF-8; Sanskrit diacritics are HTML entities",
+      "witness_status": "hosted transcription; manuscript identity and direct source dependence not established"
+    }
+  },
+  "evidence": {
+    "E-HEART-SKANDHA": {
+      "id": "E-HEART-SKANDHA",
+      "source_id": "T0251",
+      "start_line": "0848c08",
+      "end_line": "0848c09",
+      "fascicle": "001",
+      "section": "jing",
+      "quote": "異色，色即是空，空即是色；受、想、行、識，亦復如是。「舍利子！是諸法空相，不生不滅，不垢不淨，",
+      "lines": [
+        {
+          "text_id": "T08n0251",
+          "line_id": "0848c08",
+          "fascicle": "001",
+          "section_path": [
+            "jing"
+          ],
+          "text_role": "body",
+          "text": "異色，色即是空，空即是色；受、想、行、識，亦復如"
+        },
+        {
+          "text_id": "T08n0251",
+          "line_id": "0848c09",
+          "fascicle": "001",
+          "section_path": [
+            "jing"
+          ],
+          "text_role": "body",
+          "text": "是。「舍利子！是諸法空相，不生不滅，不垢不淨，"
+        }
+      ],
+      "url": "https://cbetaonline.dila.edu.tw/zh/T08n0251?line=0848c08",
+      "sha256": "d7caa99daabdaa2e72e88c3705ab3605bf2e04163bdd9c013b0d0893ebd138e5"
+    },
+    "E-HEART-MIND": {
+      "id": "E-HEART-MIND",
+      "source_id": "T0251",
+      "start_line": "0848c14",
+      "end_line": "0848c15",
+      "fascicle": "001",
+      "section": "jing",
+      "quote": "所得故，菩提薩埵依般若波羅蜜多故，心無罣礙；無罣礙故，無有恐怖，遠離顛倒夢想，究",
+      "lines": [
+        {
+          "text_id": "T08n0251",
+          "line_id": "0848c14",
+          "fascicle": "001",
+          "section_path": [
+            "jing"
+          ],
+          "text_role": "body",
+          "text": "所得故，菩提薩埵依般若波羅蜜多故，心無"
+        },
+        {
+          "text_id": "T08n0251",
+          "line_id": "0848c15",
+          "fascicle": "001",
+          "section_path": [
+            "jing"
+          ],
+          "text_role": "body",
+          "text": "罣礙；無罣礙故，無有恐怖，遠離顛倒夢想，究"
+        }
+      ],
+      "url": "https://cbetaonline.dila.edu.tw/zh/T08n0251?line=0848c14",
+      "sha256": "79d25feb46276377d1cf1b83395adbbfaa019a3e6443aae876f04d9658b8237e"
+    },
+    "E-KOSA": {
+      "id": "E-KOSA",
+      "source_id": "T1558",
+      "start_line": "0021c18",
+      "end_line": "0021c25",
+      "fascicle": "004",
+      "section": "pin",
+      "quote": "心意識體一，心心所有依，有緣有行相，相應義有五。論曰：集起故名心，思量故名意，了別故名識。復有釋言：淨不淨界種種差別故名為心，即此為他作所依止故名為意，作能依止故名為識。故心、意、識三名所詮，義雖有異而體是一。如心意識三名所詮義異體一，諸心心所名有所依所緣、行相相應亦",
+      "lines": [
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c18",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "心意識體一，心心所有依，"
+        },
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c19",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "有緣有行相，相應義有五。"
+        },
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c20",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "論曰：集起故名心，思量故名意，了別故"
+        },
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c21",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "名識。復有釋言：淨不淨界種種差別故名"
+        },
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c22",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "為心，即此為他作所依止故名為意，作能"
+        },
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c23",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "依止故名為識。故心、意、識三名所詮，義雖"
+        },
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c24",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "有異而體是一。如心意識三名所詮義異"
+        },
+        {
+          "text_id": "T29n1558",
+          "line_id": "0021c25",
+          "fascicle": "004",
+          "section_path": [
+            "pin"
+          ],
+          "text_role": "body",
+          "text": "體一，諸心心所名有所依所緣、行相相應亦"
+        }
+      ],
+      "url": "https://cbetaonline.dila.edu.tw/zh/T29n1558?line=0021c18",
+      "sha256": "4bb2ec0a6ac2542de7da0d68720502b7a1c0ed51656796eb2e20d67a68c060e9"
+    },
+    "E-HUNDRED": {
+      "id": "E-HUNDRED",
+      "source_id": "T1614",
+      "start_line": "0855b20",
+      "end_line": "0855b22",
+      "fascicle": "001",
+      "section": "jing",
+      "quote": "第。第一心法，略有八種：一眼識、二耳識、三鼻識、四舌識、五身識、六意識、七末那識、八阿賴耶識。",
+      "lines": [
+        {
+          "text_id": "T31n1614",
+          "line_id": "0855b20",
+          "fascicle": "001",
+          "section_path": [
+            "jing"
+          ],
+          "text_role": "body",
+          "text": "第。第一心法，略有八種：一眼識、二耳識、三鼻"
+        },
+        {
+          "text_id": "T31n1614",
+          "line_id": "0855b21",
+          "fascicle": "001",
+          "section_path": [
+            "jing"
+          ],
+          "text_role": "body",
+          "text": "識、四舌識、五身識、六意識、七末那識、八阿"
+        },
+        {
+          "text_id": "T31n1614",
+          "line_id": "0855b22",
+          "fascicle": "001",
+          "section_path": [
+            "jing"
+          ],
+          "text_role": "body",
+          "text": "賴耶識。"
+        }
+      ],
+      "url": "https://cbetaonline.dila.edu.tw/zh/T31n1614?line=0855b20",
+      "sha256": "8ecd6f5129be1ffcfd21fcaf7b6e6686388d38f18c021dc88125b6f050dd0456"
+    },
+    "E-SA-SKANDHA": {
+      "id": "E-SA-SKANDHA",
+      "source_id": "SA-HEART",
+      "quote": "evam eva vedanā-saṃjñā-saṃskāra-vijñānāni //",
+      "locator": "evam eva",
+      "url": "https://buddhism.lib.ntu.edu.tw/FULLTEXT/mukherjee/articles/html/sk-heart.htm",
+      "sha256": "22d38735ba004da34c0a681dabc2892176e1bcb3877f70c6b9e0d5a9c624d956",
+      "section": "transcription"
+    },
+    "E-SA-MIND": {
+      "id": "E-SA-MIND",
+      "source_id": "SA-HEART",
+      "quote": "tasmād aprāptitvād bobhisattvānāṃ prajñāpāramitām āśritya viharaty acittāvaraṇaḥ /",
+      "locator": "tasmād aprāptitvād",
+      "url": "https://buddhism.lib.ntu.edu.tw/FULLTEXT/mukherjee/articles/html/sk-heart.htm",
+      "sha256": "ed16a1a33b37ddb9046653a96ac0f4925ae64aa0e339c4838e1eb552a5e18710",
+      "section": "transcription"
+    }
+  },
+  "claims": [
+    {
+      "id": "C001",
+      "subject": "vijñāna",
+      "predicate": "parallel_corresponds_to",
+      "object": "識",
+      "evidence_ids": [
+        "E-HEART-SKANDHA",
+        "E-SA-SKANDHA"
+      ],
+      "label_zh": "識與 vijñāna 的平行位置",
+      "label_en": "識 and vijñāna in parallel passages",
+      "note_zh": "對應的是同一列舉位置；未聲稱此現存梵文轉寫就是漢譯底本。",
+      "note_en": "This is a passage-level correspondence, not a claim that the extant Sanskrit transcription was the Chinese text’s direct source.",
+      "required_surfaces": {
+        "E-HEART-SKANDHA": [
+          "識"
+        ],
+        "E-SA-SKANDHA": [
+          "vijñānāni"
+        ]
+      },
+      "context": {
+        "source_id": "T0251",
+        "scope": "passage",
+        "tradition_zh": "般若文獻",
+        "tradition_en": "Prajñāpāramitā literature",
+        "date_label": "7th century; traditional attribution",
+        "attribution": "玄奘：經錄／傳統歸屬，非底本依存證明"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "candidate_inventory_gap",
+        "native_sense_id": null,
+        "examined_sense_ids": [
+          "03039001",
+          "03039002",
+          "03039003",
+          "03039004"
+        ],
+        "relation": "no_exact_match_in_queried_snapshot",
+        "review": "pending",
+        "note": "The four exact-lemma 識 glosses do not explicitly encode the skandha sense. This is a coverage-review candidate, not proof of historical innovation."
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C001",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HEART-SKANDHA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HEART-SKANDHA:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HEART-SKANDHA:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HEART-SKANDHA:section_boundary"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-SA-SKANDHA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-SA-SKANDHA:snapshot_hash"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HEART-SKANDHA:literal_surfaces"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-SA-SKANDHA:literal_surfaces"
+          },
+          {
+            "role": "alignment",
+            "passed": true,
+            "check": "parallel_has_two_sources"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C002",
+      "subject": "citta",
+      "predicate": "parallel_corresponds_to",
+      "object": "心",
+      "evidence_ids": [
+        "E-HEART-MIND",
+        "E-SA-MIND"
+      ],
+      "label_zh": "心與 citta 複合詞的平行語境",
+      "label_en": "心 and the citta compound in parallel context",
+      "note_zh": "梵文為 acittāvaraṇaḥ 複合形式；lemma 對應及否定作用域仍需梵文專家審核。",
+      "note_en": "The Sanskrit witness has the compound acittāvaraṇaḥ. Lemma alignment and the scope of negation require specialist review.",
+      "required_surfaces": {
+        "E-HEART-MIND": [
+          "心"
+        ],
+        "E-SA-MIND": [
+          "acittāvaraṇaḥ"
+        ]
+      },
+      "context": {
+        "source_id": "T0251",
+        "scope": "passage",
+        "tradition_zh": "般若文獻",
+        "tradition_en": "Prajñāpāramitā literature",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "candidate_related_to",
+        "native_sense_id": "05231612",
+        "relation": "related_to",
+        "review": "pending",
+        "note": "Native CWN gloss: 人的感情或思想。 A proposed modern anchor, not equivalence or a proven historical descendant."
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C002",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HEART-MIND:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HEART-MIND:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HEART-MIND:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HEART-MIND:section_boundary"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-SA-MIND:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-SA-MIND:snapshot_hash"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HEART-MIND:literal_surfaces"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-SA-MIND:literal_surfaces"
+          },
+          {
+            "role": "alignment",
+            "passed": true,
+            "check": "parallel_has_two_sources"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C003",
+      "subject": "心",
+      "predicate": "explained_as",
+      "object": "集起",
+      "evidence_ids": [
+        "E-KOSA"
+      ],
+      "label_zh": "心：集起故名",
+      "label_en": "心: explained through accumulation",
+      "note_zh": "保留論述中的命名理據，不將之提升為跨宗派的唯一詞義。",
+      "note_en": "Preserve the local explanation of the name; do not universalize it across traditions.",
+      "required_surfaces": {
+        "E-KOSA": [
+          "心",
+          "集起"
+        ]
+      },
+      "context": {
+        "source_id": "T1558",
+        "scope": "passage",
+        "tradition_zh": "《俱舍論》本段論述",
+        "tradition_en": "Local Kośa exposition",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "candidate_related_to",
+        "native_sense_id": "05231612",
+        "relation": "related_to",
+        "review": "pending",
+        "note": "Native CWN gloss: 人的感情或思想。 A proposed modern anchor, not equivalence or a proven historical descendant."
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C003",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-KOSA:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-KOSA:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-KOSA:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C004",
+      "subject": "意",
+      "predicate": "explained_as",
+      "object": "思量",
+      "evidence_ids": [
+        "E-KOSA"
+      ],
+      "label_zh": "意：思量故名",
+      "label_en": "意: explained through mentation",
+      "note_zh": "保留論述中的命名理據，不將之提升為跨宗派的唯一詞義。",
+      "note_en": "Preserve the local explanation of the name; do not universalize it across traditions.",
+      "required_surfaces": {
+        "E-KOSA": [
+          "意",
+          "思量"
+        ]
+      },
+      "context": {
+        "source_id": "T1558",
+        "scope": "passage",
+        "tradition_zh": "《俱舍論》本段論述",
+        "tradition_en": "Local Kośa exposition",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C004",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-KOSA:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-KOSA:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-KOSA:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C005",
+      "subject": "識",
+      "predicate": "explained_as",
+      "object": "了別",
+      "evidence_ids": [
+        "E-KOSA"
+      ],
+      "label_zh": "識：了別故名",
+      "label_en": "識: explained through discrimination",
+      "note_zh": "保留論述中的命名理據，不將之提升為跨宗派的唯一詞義。",
+      "note_en": "Preserve the local explanation of the name; do not universalize it across traditions.",
+      "required_surfaces": {
+        "E-KOSA": [
+          "識",
+          "了別"
+        ]
+      },
+      "context": {
+        "source_id": "T1558",
+        "scope": "passage",
+        "tradition_zh": "《俱舍論》本段論述",
+        "tradition_en": "Local Kośa exposition",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C005",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-KOSA:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-KOSA:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-KOSA:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C006",
+      "subject": "心",
+      "predicate": "co_referential_in_context",
+      "object": "意",
+      "evidence_ids": [
+        "E-KOSA"
+      ],
+      "label_zh": "心／意：義異而體一",
+      "label_en": "心 / 意: distinct explanations, one referent",
+      "note_zh": "「體一」是本段的義理主張；不能推出任何語境中皆可互換，亦不採 owl:sameAs。",
+      "note_en": "The passage asserts a shared referent while distinguishing explanations. This licenses neither unrestricted substitutability nor owl:sameAs.",
+      "required_surfaces": {
+        "E-KOSA": [
+          "義雖有異而體是一",
+          "心",
+          "意"
+        ]
+      },
+      "context": {
+        "source_id": "T1558",
+        "scope": "passage",
+        "tradition_zh": "《俱舍論》本段論述",
+        "tradition_en": "Local Kośa exposition",
+        "date_label": "7th century; traditional attribution",
+        "conset_id": "CONSET-KOSA-MIND-001"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C006",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-KOSA:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-KOSA:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-KOSA:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C007",
+      "subject": "意",
+      "predicate": "co_referential_in_context",
+      "object": "識",
+      "evidence_ids": [
+        "E-KOSA"
+      ],
+      "label_zh": "意／識：義異而體一",
+      "label_en": "意 / 識: distinct explanations, one referent",
+      "note_zh": "「體一」是本段的義理主張；不能推出任何語境中皆可互換，亦不採 owl:sameAs。",
+      "note_en": "The passage asserts a shared referent while distinguishing explanations. This licenses neither unrestricted substitutability nor owl:sameAs.",
+      "required_surfaces": {
+        "E-KOSA": [
+          "義雖有異而體是一",
+          "意",
+          "識"
+        ]
+      },
+      "context": {
+        "source_id": "T1558",
+        "scope": "passage",
+        "tradition_zh": "《俱舍論》本段論述",
+        "tradition_en": "Local Kośa exposition",
+        "date_label": "7th century; traditional attribution",
+        "conset_id": "CONSET-KOSA-MIND-001"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C007",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-KOSA:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-KOSA:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-KOSA:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C008",
+      "subject": "心",
+      "predicate": "co_referential_in_context",
+      "object": "識",
+      "evidence_ids": [
+        "E-KOSA"
+      ],
+      "label_zh": "心／識：義異而體一",
+      "label_en": "心 / 識: distinct explanations, one referent",
+      "note_zh": "「體一」是本段的義理主張；不能推出任何語境中皆可互換，亦不採 owl:sameAs。",
+      "note_en": "The passage asserts a shared referent while distinguishing explanations. This licenses neither unrestricted substitutability nor owl:sameAs.",
+      "required_surfaces": {
+        "E-KOSA": [
+          "義雖有異而體是一",
+          "心",
+          "識"
+        ]
+      },
+      "context": {
+        "source_id": "T1558",
+        "scope": "passage",
+        "tradition_zh": "《俱舍論》本段論述",
+        "tradition_en": "Local Kośa exposition",
+        "date_label": "7th century; traditional attribution",
+        "conset_id": "CONSET-KOSA-MIND-001"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C008",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-KOSA:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-KOSA:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-KOSA:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-KOSA:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C009",
+      "subject": "眼識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "眼識列於心法",
+      "label_en": "眼識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "眼識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C009",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C010",
+      "subject": "耳識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "耳識列於心法",
+      "label_en": "耳識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "耳識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C010",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C011",
+      "subject": "鼻識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "鼻識列於心法",
+      "label_en": "鼻識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "鼻識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C011",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C012",
+      "subject": "舌識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "舌識列於心法",
+      "label_en": "舌識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "舌識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C012",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C013",
+      "subject": "身識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "身識列於心法",
+      "label_en": "身識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "身識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C013",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C014",
+      "subject": "意識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "意識列於心法",
+      "label_en": "意識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "意識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C014",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C015",
+      "subject": "末那識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "末那識列於心法",
+      "label_en": "末那識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "末那識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C015",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    },
+    {
+      "id": "C016",
+      "subject": "阿賴耶識",
+      "predicate": "classified_under",
+      "object": "心法",
+      "evidence_ids": [
+        "E-HUNDRED"
+      ],
+      "label_zh": "阿賴耶識列於心法",
+      "label_en": "阿賴耶識 classified under 心法",
+      "note_zh": "限於《百法明門論》的八種心法分類。暫採保守的 classified_under，待審核是否可轉為嚴格上下位關係。",
+      "note_en": "Scoped to this text’s eightfold classification. classified_under is conservative; a strict taxonomic interpretation awaits review.",
+      "required_surfaces": {
+        "E-HUNDRED": [
+          "阿賴耶識",
+          "心法",
+          "八種"
+        ]
+      },
+      "context": {
+        "source_id": "T1614",
+        "scope": "textual_classification",
+        "tradition_zh": "《百法明門論》分類",
+        "tradition_en": "Hundred Dharmas classification",
+        "date_label": "7th century; traditional attribution"
+      },
+      "status": "machine_prepared",
+      "human_review": "pending",
+      "counterevidence_search": "not_run",
+      "confidence": null,
+      "cwn_mapping": {
+        "status": "not_assessed",
+        "native_sense_id": null
+      },
+      "proposed_by": "assistant-curated-template",
+      "source_checks": {
+        "id": "C016",
+        "mechanical_status": "eligible_for_review",
+        "errors": [],
+        "events": [
+          {
+            "role": "schema",
+            "passed": true,
+            "check": "required_fields"
+          },
+          {
+            "role": "relation",
+            "passed": true,
+            "check": "predicate_supported"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_source_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "evidence_exists"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:source_exists"
+          },
+          {
+            "role": "integrity",
+            "passed": true,
+            "check": "E-HUNDRED:snapshot_hash"
+          },
+          {
+            "role": "source",
+            "passed": true,
+            "check": "E-HUNDRED:line_window"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "E-HUNDRED:section_boundary"
+          },
+          {
+            "role": "context",
+            "passed": true,
+            "check": "context_supported_by_evidence"
+          },
+          {
+            "role": "lexical",
+            "passed": true,
+            "check": "E-HUNDRED:literal_surfaces"
+          },
+          {
+            "role": "adjudication",
+            "passed": false,
+            "check": "expert_review_pending"
+          }
+        ],
+        "semantic_status": "not_evaluated",
+        "human_review": "pending"
+      }
+    }
+  ],
+  "paratext_audit": {
+    "work": "T0251",
+    "method": "Literal character count of 心 in body-role rows; paratext headings/bylines excluded. Not word segmentation, sense annotation, or independent samples.",
+    "preface_xin": 9,
+    "sutra_xin": 1,
+    "preface_heading_row_count": 3,
+    "preface_headings": [
+      {
+        "text_id": "T08n0251",
+        "line_id": "0848a03",
+        "fascicle": "1",
+        "section_path": [
+          "xu"
+        ],
+        "text_role": "head",
+        "text": "大明太祖高皇帝御製般若心經"
+      },
+      {
+        "text_id": "T08n0251",
+        "line_id": "0848a04",
+        "fascicle": "1",
+        "section_path": [
+          "xu"
+        ],
+        "text_role": "head",
+        "text": "序"
+      },
+      {
+        "text_id": "T08n0251",
+        "line_id": "0848b19",
+        "fascicle": "1",
+        "section_path": [
+          "xu"
+        ],
+        "text_role": "head",
+        "text": "般若波羅蜜多心經序"
+      }
+    ],
+    "source_id": "T0251",
+    "implication": "Document-level translator/year attribution cannot be safely propagated to every contained section."
+  },
+  "consets": [
+    {
+      "id": "CONSET-KOSA-MIND-001",
+      "members": [
+        "心",
+        "意",
+        "識"
+      ],
+      "scope_evidence": "E-KOSA",
+      "relation": "co_referential_in_context",
+      "status": "candidate",
+      "clustering": "curated from explicit passage, no embeddings run"
+    }
+  ],
+  "cwn": {
+    "source": "https://github.com/lopentu/CwnGraph",
+    "manifest_url": "https://raw.githubusercontent.com/lopentu/CwnGraph/develop/etc/manifest.json",
+    "manifest": {
+      "version": "v2022.08",
+      "images": [
+        {
+          "tag": "v.2022.08.01",
+          "file": "cwn-graph-v.2022.08.01.pyobj",
+          "drive_id": "1znQexFItQsALVz6hZmBfR5uvcNdhclOZ"
+        },
+        {
+          "tag": "beta",
+          "file": "cwn-graph-v.2022.08.01.pyobj",
+          "drive_id": "1znQexFItQsALVz6hZmBfR5uvcNdhclOZ",
+          "note": "auditing version, don't cite. "
+        },
+        {
+          "tag": "base",
+          "file": "cwn_graph.pyobj",
+          "drive_id": "1opGRw490cAizoj2JHzR8UIZME3Mc65Ze"
+        },
+        {
+          "tag": "v.2022.07",
+          "file": "cwn-graph-v.2022.07.15.pyobj",
+          "drive_id": "17EupEs70CTFwRFas9wp7nHdJyX9KLj82"
+        },
+        {
+          "tag": "v.2022.06",
+          "file": "cwn-graph-v.2022.06.21.pyobj",
+          "drive_id": "125xI2IuRqWrCsKRElK_m5O8-4sYUgM80"
+        },
+        {
+          "tag": "v.2022.04",
+          "file": "cwn-graph-v.2022.04.pyobj",
+          "drive_id": "1kS9Fptp44BxgC8OlE8Tc1HN2NkjzzBLm"
+        },
+        {
+          "tag": "v.2020.05",
+          "file": "cwn-graph-v.2020.05.pyobj",
+          "drive_id": "18Dmy2fU6qGfFOsS3iCV7j-5u9xz6LfdP"
+        }
+      ]
+    },
+    "image_metadata": {
+      "image_id": "63f7e0038b2edde12095fcc458859354992af6f1",
+      "label": "v.2022.08.01",
+      "bundle_id": "bundle-cwn-workgroup-2021-2022",
+      "annoter": "cwn-ntu",
+      "timestamp": 1659324160.739259,
+      "note": "added data from cwn-workgroup-2021-2022"
+    },
+    "image_sha256": "d3d8b7000041fdf28b4b7fb6a15f3a1dfed8e6f0f0e15e96f87ec137e6079029",
+    "retrieved": "2026-09-07",
+    "query": "exact lemma match: 心, 意, 識; all homographs retained",
+    "senses": [
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231601",
+        "gloss": "位於動物胸腔，推運全身血液循環的器官。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231602",
+        "gloss": "以心為形象製成的人造物。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231603",
+        "gloss": "特定平面的中心。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231604",
+        "gloss": "物體內部包含中心點的部位。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231605",
+        "gloss": "比喻對特定事物的認識見解。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231606",
+        "gloss": "比喻個人情緒所在的地方。",
+        "pos": "Nc",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231607",
+        "gloss": "具有前述特質的想法或行為。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231608",
+        "gloss": "想做特定事件的念頭。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231609",
+        "gloss": "比喻人記憶所在的地方。",
+        "pos": "Nc",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231610",
+        "gloss": "心胸。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231611",
+        "gloss": "心地。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "052316",
+        "lemma": "心",
+        "sense_id": "05231612",
+        "gloss": "人的感情或思想。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "060396",
+        "lemma": "心",
+        "sense_id": "06039601",
+        "gloss": "中國天文學的星宿，為東方蒼龍之一。",
+        "pos": "Nb",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "070287",
+        "lemma": "意",
+        "sense_id": "07028701",
+        "gloss": "前述對象所代表的涵義概念。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "070287",
+        "lemma": "意",
+        "sense_id": "07028702",
+        "gloss": "比喻事物的用途或正面作用。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "070287",
+        "lemma": "意",
+        "sense_id": "07028703",
+        "gloss": "因外界刺激而引發的特定心理狀態。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "070287",
+        "lemma": "意",
+        "sense_id": "07028704",
+        "gloss": "想做特定事件的念頭。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "070287",
+        "lemma": "意",
+        "sense_id": "07028705",
+        "gloss": "對特定事件的看法或願望。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "080153",
+        "lemma": "意",
+        "sense_id": "08015301",
+        "gloss": "國名，歐洲南部的國家，主要由義大利島和西西里島組成，首都為羅馬。",
+        "pos": "Nc",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "080153",
+        "lemma": "意",
+        "sense_id": "08015302",
+        "gloss": "治理義大利的政府。",
+        "pos": "Nb",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "080153",
+        "lemma": "意",
+        "sense_id": "08015303",
+        "gloss": "義大利的文化。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "080153",
+        "lemma": "意",
+        "sense_id": "08015304",
+        "gloss": "義大利人的語文。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "080154",
+        "lemma": "意",
+        "sense_id": "08015401",
+        "gloss": "姓。",
+        "pos": "Nb",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "030390",
+        "lemma": "識",
+        "sense_id": "03039001",
+        "gloss": "學習過而懂得，多指學術知識方面。",
+        "pos": "VJ",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "030390",
+        "lemma": "識",
+        "sense_id": "03039002",
+        "gloss": "認識、熟悉。",
+        "pos": "VJ",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "030390",
+        "lemma": "識",
+        "sense_id": "03039003",
+        "gloss": "能分辨並發掘人才。",
+        "pos": "VJ",
+        "source": "CWN",
+        "status": "native_export"
+      },
+      {
+        "lemma_id": "030390",
+        "lemma": "識",
+        "sense_id": "03039004",
+        "gloss": "見解、見聞。",
+        "pos": "Na",
+        "source": "CWN",
+        "status": "native_export"
+      }
+    ],
+    "rights": "CWN / CwnGraph source terms retained; this is a limited research excerpt, not a new standalone dictionary license."
+  }
+}

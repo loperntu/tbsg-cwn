@@ -1,0 +1,27 @@
+@prefix tbsg: <https://w3id.org/tbsg-cwn/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+tbsg:ContextualConset a owl:Class ;
+ rdfs:label "Context-bounded conceptual grouping"@en ;
+ rdfs:comment "A revisable grouping scoped by textual evidence. Membership implies neither lexical synonymy nor owl:sameAs. No automatic SKOS exactMatch is licensed."@en .
+tbsg:ConsetMembershipProposal a owl:Class ;
+ rdfs:label "Proposal for contextual conset membership"@en .
+tbsg:inConset a owl:ObjectProperty ; rdfs:range tbsg:ContextualConset .
+tbsg:scopeEvidence a owl:ObjectProperty ; rdfs:range tbsg:Attestation .
+tbsg:memberForm a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:contentSHA256 a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:mechanicalStatus a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:mappingProposal a owl:ObjectProperty .
+tbsg:targetNativeSenseId a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:subjectLabel a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:objectLabel a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:relationType a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:claimScope a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:contextText a owl:ObjectProperty .
+tbsg:lineStart a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:lineEnd a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:sectionType a owl:DatatypeProperty ; rdfs:range xsd:string .
+tbsg:sourceRevision a owl:DatatypeProperty ; rdfs:range xsd:string .

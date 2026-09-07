@@ -1,0 +1,1076 @@
+{
+  "mode": "deterministic-source-checks",
+  "summary": {
+    "total": 16,
+    "eligible_for_review": 16,
+    "rejected": 0,
+    "expert_accepted": 0
+  },
+  "claims": [
+    {
+      "id": "C001",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HEART-SKANDHA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HEART-SKANDHA:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HEART-SKANDHA:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HEART-SKANDHA:section_boundary"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-SA-SKANDHA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-SA-SKANDHA:snapshot_hash"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HEART-SKANDHA:literal_surfaces"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-SA-SKANDHA:literal_surfaces"
+        },
+        {
+          "role": "alignment",
+          "passed": true,
+          "check": "parallel_has_two_sources"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C002",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HEART-MIND:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HEART-MIND:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HEART-MIND:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HEART-MIND:section_boundary"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-SA-MIND:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-SA-MIND:snapshot_hash"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HEART-MIND:literal_surfaces"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-SA-MIND:literal_surfaces"
+        },
+        {
+          "role": "alignment",
+          "passed": true,
+          "check": "parallel_has_two_sources"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C003",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-KOSA:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-KOSA:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-KOSA:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C004",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-KOSA:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-KOSA:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-KOSA:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C005",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-KOSA:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-KOSA:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-KOSA:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C006",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-KOSA:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-KOSA:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-KOSA:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C007",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-KOSA:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-KOSA:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-KOSA:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C008",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-KOSA:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-KOSA:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-KOSA:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-KOSA:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C009",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C010",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C011",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C012",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C013",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C014",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C015",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    },
+    {
+      "id": "C016",
+      "mechanical_status": "eligible_for_review",
+      "errors": [],
+      "events": [
+        {
+          "role": "schema",
+          "passed": true,
+          "check": "required_fields"
+        },
+        {
+          "role": "relation",
+          "passed": true,
+          "check": "predicate_supported"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_source_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "evidence_exists"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:source_exists"
+        },
+        {
+          "role": "integrity",
+          "passed": true,
+          "check": "E-HUNDRED:snapshot_hash"
+        },
+        {
+          "role": "source",
+          "passed": true,
+          "check": "E-HUNDRED:line_window"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "E-HUNDRED:section_boundary"
+        },
+        {
+          "role": "context",
+          "passed": true,
+          "check": "context_supported_by_evidence"
+        },
+        {
+          "role": "lexical",
+          "passed": true,
+          "check": "E-HUNDRED:literal_surfaces"
+        },
+        {
+          "role": "adjudication",
+          "passed": false,
+          "check": "expert_review_pending"
+        }
+      ],
+      "semantic_status": "not_evaluated",
+      "human_review": "pending"
+    }
+  ],
+  "limitations": "Checks local evidence integrity and literal occurrence, not philological entailment. No self-verifying LLM experiment was run."
+}

@@ -1,0 +1,302 @@
+{
+  "source": "https://github.com/lopentu/CwnGraph",
+  "manifest_url": "https://raw.githubusercontent.com/lopentu/CwnGraph/develop/etc/manifest.json",
+  "manifest": {
+    "version": "v2022.08",
+    "images": [
+      {
+        "tag": "v.2022.08.01",
+        "file": "cwn-graph-v.2022.08.01.pyobj",
+        "drive_id": "1znQexFItQsALVz6hZmBfR5uvcNdhclOZ"
+      },
+      {
+        "tag": "beta",
+        "file": "cwn-graph-v.2022.08.01.pyobj",
+        "drive_id": "1znQexFItQsALVz6hZmBfR5uvcNdhclOZ",
+        "note": "auditing version, don't cite. "
+      },
+      {
+        "tag": "base",
+        "file": "cwn_graph.pyobj",
+        "drive_id": "1opGRw490cAizoj2JHzR8UIZME3Mc65Ze"
+      },
+      {
+        "tag": "v.2022.07",
+        "file": "cwn-graph-v.2022.07.15.pyobj",
+        "drive_id": "17EupEs70CTFwRFas9wp7nHdJyX9KLj82"
+      },
+      {
+        "tag": "v.2022.06",
+        "file": "cwn-graph-v.2022.06.21.pyobj",
+        "drive_id": "125xI2IuRqWrCsKRElK_m5O8-4sYUgM80"
+      },
+      {
+        "tag": "v.2022.04",
+        "file": "cwn-graph-v.2022.04.pyobj",
+        "drive_id": "1kS9Fptp44BxgC8OlE8Tc1HN2NkjzzBLm"
+      },
+      {
+        "tag": "v.2020.05",
+        "file": "cwn-graph-v.2020.05.pyobj",
+        "drive_id": "18Dmy2fU6qGfFOsS3iCV7j-5u9xz6LfdP"
+      }
+    ]
+  },
+  "image_metadata": {
+    "image_id": "63f7e0038b2edde12095fcc458859354992af6f1",
+    "label": "v.2022.08.01",
+    "bundle_id": "bundle-cwn-workgroup-2021-2022",
+    "annoter": "cwn-ntu",
+    "timestamp": 1659324160.739259,
+    "note": "added data from cwn-workgroup-2021-2022"
+  },
+  "image_sha256": "d3d8b7000041fdf28b4b7fb6a15f3a1dfed8e6f0f0e15e96f87ec137e6079029",
+  "retrieved": "2026-09-07",
+  "query": "exact lemma match: 心, 意, 識; all homographs retained",
+  "senses": [
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231601",
+      "gloss": "位於動物胸腔，推運全身血液循環的器官。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231602",
+      "gloss": "以心為形象製成的人造物。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231603",
+      "gloss": "特定平面的中心。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231604",
+      "gloss": "物體內部包含中心點的部位。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231605",
+      "gloss": "比喻對特定事物的認識見解。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231606",
+      "gloss": "比喻個人情緒所在的地方。",
+      "pos": "Nc",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231607",
+      "gloss": "具有前述特質的想法或行為。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231608",
+      "gloss": "想做特定事件的念頭。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231609",
+      "gloss": "比喻人記憶所在的地方。",
+      "pos": "Nc",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231610",
+      "gloss": "心胸。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231611",
+      "gloss": "心地。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "052316",
+      "lemma": "心",
+      "sense_id": "05231612",
+      "gloss": "人的感情或思想。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "060396",
+      "lemma": "心",
+      "sense_id": "06039601",
+      "gloss": "中國天文學的星宿，為東方蒼龍之一。",
+      "pos": "Nb",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "070287",
+      "lemma": "意",
+      "sense_id": "07028701",
+      "gloss": "前述對象所代表的涵義概念。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "070287",
+      "lemma": "意",
+      "sense_id": "07028702",
+      "gloss": "比喻事物的用途或正面作用。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "070287",
+      "lemma": "意",
+      "sense_id": "07028703",
+      "gloss": "因外界刺激而引發的特定心理狀態。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "070287",
+      "lemma": "意",
+      "sense_id": "07028704",
+      "gloss": "想做特定事件的念頭。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "070287",
+      "lemma": "意",
+      "sense_id": "07028705",
+      "gloss": "對特定事件的看法或願望。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "080153",
+      "lemma": "意",
+      "sense_id": "08015301",
+      "gloss": "國名，歐洲南部的國家，主要由義大利島和西西里島組成，首都為羅馬。",
+      "pos": "Nc",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "080153",
+      "lemma": "意",
+      "sense_id": "08015302",
+      "gloss": "治理義大利的政府。",
+      "pos": "Nb",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "080153",
+      "lemma": "意",
+      "sense_id": "08015303",
+      "gloss": "義大利的文化。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "080153",
+      "lemma": "意",
+      "sense_id": "08015304",
+      "gloss": "義大利人的語文。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "080154",
+      "lemma": "意",
+      "sense_id": "08015401",
+      "gloss": "姓。",
+      "pos": "Nb",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "030390",
+      "lemma": "識",
+      "sense_id": "03039001",
+      "gloss": "學習過而懂得，多指學術知識方面。",
+      "pos": "VJ",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "030390",
+      "lemma": "識",
+      "sense_id": "03039002",
+      "gloss": "認識、熟悉。",
+      "pos": "VJ",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "030390",
+      "lemma": "識",
+      "sense_id": "03039003",
+      "gloss": "能分辨並發掘人才。",
+      "pos": "VJ",
+      "source": "CWN",
+      "status": "native_export"
+    },
+    {
+      "lemma_id": "030390",
+      "lemma": "識",
+      "sense_id": "03039004",
+      "gloss": "見解、見聞。",
+      "pos": "Na",
+      "source": "CWN",
+      "status": "native_export"
+    }
+  ],
+  "rights": "CWN / CwnGraph source terms retained; this is a limited research excerpt, not a new standalone dictionary license."
+}
